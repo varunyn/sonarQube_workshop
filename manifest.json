@@ -1,0 +1,38 @@
+{
+    "workshop": {
+        "title": "On-prem Weblogic migration to Cloud",
+        "description": "Description of this workshop.",
+        "theme": "default",
+        "interactive":"https://launch.oracle.com/?",
+        "labs": [
+            {
+                "number": "0",
+                "filename": "Intro-Instructor-Led.md",
+                "title": "Read Me First",
+                "description": "Step-by-step workshop instructions"
+
+            },
+            {
+                "number": "100",
+                "filename": "LabGuide100.md",
+                "title": "Lab 100:  Configure Developer Cloud Service",
+                "description": ""
+
+            },
+            {
+                "number": "200",
+                "filename": "LabGuide200.md",
+                "title": "Lab 200:  Configure SonarQube Server",
+                "description": ""
+
+            },
+            {
+                "number": "300",
+                "filename": "LabGuide300.md",
+                "title": "Lab 300: Fix issues in the code",
+                "description": ""
+
+            }
+        ]
+    }
+}
