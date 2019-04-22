@@ -1,4 +1,4 @@
-# On-prem Weblogic migration to Cloud Workshop
+# Continuous Inspection with Sonar Qube
 
 ## IMPORTANT: How to prepare for this workshop
 
@@ -27,9 +27,9 @@
 
 - Visit the [Workshop Interactive Labguide](http://launch.oracle.com/?cloudnative) for a visual overview of the workshop content.
 
-## On-prem Weblogic migration to Cloud Workshop
+## Continuous Inspection with Sonar Qube
 
-This Oracle Public Cloud DevOps On-prem Weblogic migration to Cloud Workshop will walk you through o understand the movement on a Java EE application from their on-prem Weblogic deployment to Oracle's Cloud, during which you will create and deploy Jave EE war files. You will take on 2 Personas during the workshop. The DevOps Manager Persona will add new features and keep the system stable, fast and available. The DevOps Manager will involve integrating development, testing, deployment and release cycle in twitter feed service and alpha product catalog. The Infrastructure person persona will extract Alpha Product Catalog war file and import into the WebLogic Server. During the workshop, you will get exposure to Oracle Developer Cloud Service and Oracle Application Container Cloud Service. Also, you will have option to familiar with Java Cloud Service and AppToCloud tool.
+This Oracle Public Cloud DevOps Continuous Inspection with Sonar Qube will walk you through o understand the movement on a Java EE application from their on-prem Weblogic deployment to Oracle's Cloud, during which you will create and deploy Jave EE war files. You will take on 2 Personas during the workshop. The DevOps Manager Persona will add new features and keep the system stable, fast and available. The DevOps Manager will involve integrating development, testing, deployment and release cycle in twitter feed service and alpha product catalog. The Infrastructure person persona will extract Alpha Product Catalog war file and import into the WebLogic Server. During the workshop, you will get exposure to Oracle Developer Cloud Service and Oracle Application Container Cloud Service. Also, you will have option to familiar with Java Cloud Service and AppToCloud tool.
 
 ## Workshop Details
 

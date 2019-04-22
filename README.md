@@ -1,3 +1,3 @@
-# On-prem Weblogic migration to Cloud Workshop
+# Continuous Inspection with Sonar Qube
 
 ## About this Workshop

@@ -3,25 +3,21 @@ Updated: 08/28/2018
 
 ## Introduction
 
-This is the first of several labs that are part of the WebLogic Server On-Prem to Cloud Workshop. This lab will walk you through the process of moving an existing Java On-Prem application into Oracle Application Container Cloud. It will create and deploy war file and deploy it to the Oracle Public Cloud.
+This is the first of several labs that are part of the **Continous Code Inspection with Sonar Qube.** This workshop will walk you through how to manage application lifecycle and do code review using sonarQube.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Objectives
 
-- Deploying the Application to the Oracle Application Cloud Service Instance
-- Verifying the Application Deployment
+- Deploying the SonarQube server to the Compute Instance
+- Verifying the Server Deployment and run analysis
+- Creating issue ticket in DevCS. 
 
 ## Required Artifacts
 
-For this lab you will need Github and Oracle JDeveloper. Use the following links to set up:
+For this lab you will need Oracle Cloud account and Developer Cloud service instance. Use the following links to set up:
 
-- a [GitHub account - https://github.com/join](GitHub account - https://github.com/join)
--  [Oracle JDeveloper - https://www.oracle.com/technetwork/developer-tools/jdev/overview/index.html](Oracle JDeveloper - https://www.oracle.com/technetwork/developer-tools/jdev/overview/index.html)
-
-# Redeploy both Components to Application Container Cloud Service
-
-## Deploying the Application to the Oracle Application Cloud Service Instance
+## Deploying SonarQube application to Compute Instance
 
 ### **STEP 1**: Preparing the WAR file to be Deployed
 
