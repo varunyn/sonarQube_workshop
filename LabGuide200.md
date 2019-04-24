@@ -1,5 +1,4 @@
-![](images/200/Picture200-lab.png)  
-Updated: 08/28/2018
+<!-- ![](images/200/Picture200-lab.png)   -->
 
 ## Introduction
 
@@ -15,95 +14,148 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
 ## Required Artifacts
 
-For this lab you will need Oracle Cloud account and Developer Cloud service instance. Use the following links to set up:
+For this lab you will need Oracle Cloud account and Developer Cloud service instance.
 
 ## Deploying SonarQube application to Compute Instance
 
-### **STEP 1**: Preparing the WAR file to be Deployed
+### **STEP 1**: Create build job to deploy SonarQube docker image in Compute Instance.
 
-- In the Projects pane in Oracle JDeveloper, right-click Project and select Deploy > New Deployment Profile.
-   
-    ![](images/200/war_1.png) 
+-  Click on **Create Job** 
 
-- The New Deployment Profile is displayed. Select WAR file and click Next.
-  
-    ![](images/200/war_2.png) 
+    ![](images/200/lab200_createBuildJob_1.png) 
 
-- The Create Deployment Profile is displayed. Select Profile Type to WAR file and click OK.
+- Give the name for Job. For sake of simplicty we name it deploySonarQube. Make sure to select template.
 
-    ![](images/200/war_3.png) 
+    ![](images/200/lab200_createBuildJob_2.png)
 
-- In the Edit WAR Deployment Profile Properties, edit any changes and click OK.
+- Click on **Before Build** in Job Configuration and then click on **Add Before Build Action** and then select **SSH Configuration**.
 
-    ![](images/200/war_4.png) 
+    ![](images/200/lab200_createBuildJob_3.png)
 
-- Deploy AlphaProductCatalog is displayed. Select Deploy to War and click Next.
+- Paste the Private Key for the Public key used to create Compute Instance in Lab 050. Also select **Setup files in ~/.ssh for command-lins tools**
 
-    ![](images/200/war_5.png) 
+```
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAk5p0D6ab7j9eTOY8060aDM1qREQyFfa9BKtZo/uaxJBaVmkR
+3HIJBmUaY0wXKlp/N1BhtW5n3w3QsuBJFlsnTbuSZZdy9jBaxfUwT4OGY9jIdlec
+dw0KLM8qQx4hpe7Kdc/ixmKTwpnT3Ls/0qy2zKyttl+ox7RGSV+emH2eRRFSoojr
+KvwHuPM28RFFCmQEOWHVkiy4mjgJqTKntqkL8okYs9DwLEKfKj+qRo6scTAWWnGR
+pTwg7qw+hOV8Yf1fky/ENF+9zdRXsZSLjuMeSqACUHUEK0kREybjUQtYewTTQJ/b
+tCW8vVNKqNtFLYC0G6QUp29BaC7sFMZj1KXP6wIDAQABAoIBAAT6NmO4uJVmKaXq
+Na7lrXU1EBpROmcnNOSNaq5u858hRwqW7HVEmy1OB3/FtxpEhvm0ijb2DCanbpw5
+l/1bAY5LfvpSCxxmMQlv5TspMkT3sHrdJXeWRvuP2Nr+jx/rV4R1iC4scNMlINHW
+tqZCEMACKrF1tFlXqO8cfFqkEcw+ZjC/2ywkiq2GMA6l41p3iij0vtX5tZ86x9Eb
+LSv/d4xzJBRSnr93eJ21SEVP/wCWerWpAYbVUhA1LXz09G4U9d71oWs1Uuxdeeu4
+WxupUNsJcR6df1eVIHFKVSXsIAapQNdeML//FSO7ZN3MZNglCMElRvbkw5yJN0Jf
+Ee5FcTECgYEAwqn2k6SwLDWPeMI/PEr5Z++6OjL/uCHjBrvWVPQeLlBs6sWqpOSU
+3DbTKXZNQePpJR8yZVyCfVDpFDY9iO/gPV1uKPFV+Mt6SIuyfsC1rxgaipJosxSP
+qK13nvKRD4zUVDTVZ1A6cWf3qXxQxpfcINCcktRUku6V9mv9OtLM4rUCgYEAwhx5
+yyFRyTQOiQhebbdvonxJVvHDLGEeNxEns3a2AnqlRO2a7xBIgqP4qyQXNw1z9+8P
+FDVl5p/vc0Tf2v/4EjvWadFuiFi4UUSp45C8FfZAaSPpzV9qZ2wU69cITqGWuOSE
+tQF6Gw0DhiliG9Q1f8/GZNh21FGnWN0bI0qqbB8CgYAKCJyvC4QRI0mb3ddIkky8
+sLyWl15a7VQ4WqI3isWreXXDvCCJk0ag+ypzLqfYx5iS00LTuqr3Lp507j7JuiOC
+xjgRYC8gPcy1xI2UvvYeak2j6tv+rwagmSBbTwFvHcEr/fUp+BarFcLMN54qPlWY
+U2heoRci461TIEnTKF5rKQKBgAz8Gqmb8PykntRL2wU74BvedIl8YrH1TTAh1aYL
+quE/kw6pVlPnovIaRegs4eCs5bUQKNIRQF/NExeC4/aiaNXPauhpOhuk06+cCEFQ
+zUQq1OQzotA6McP5Vuzv1X5tEMgNgVMaZjCpDjNLUWTLLUj/fSYB1PEfBTLMl6Qk
+uoHBAoGBAMH8/LbPs5yNM0YUZAuNijmqK8JnRAXdHb14m4/1kJvItx6sxoBtiWgm
+ryq4/XTyF5j9XsEF3v5wSot9aFLPUpfndaCLvFKgptUhICHTuPmBFhKX9yZbf2Iz
+sawLIbtlGQwtd8mO8uHFHW8kMEDei/qL+WhgimdeJeF2k8Xv939N
+-----END RSA PRIVATE KEY-----
+```
+- Note: You can use your own keys but to keep the lab guide easy we are providing one for you.
 
-- In the Summary page, verify the values and click Finish.
-   
-    ![](images/200/war_6.png)
+    ![](images/200/lab200_createBuildJob_4.png)
 
-### **STEP 2**: Uploading the war file to the  Application Container Cloud Service
+- Next, click on **Steps** and then **Add Step** and select **Unix Shell**.
 
+    ![](images/200/lab200_createBuildJob_5.png)
 
-- In the Oracle Application Container Cloud, click Create Application.
+- Paste the following commands in the Unix Shell
 
-    ![](images/200/1.png) 
+```
+ssh -o StrictHostKeyChecking=no opc@PUT_YOUR_PUBLIC_IP_ADDRESS_OF_THE_INSTANCE_CREATED_IN_LAB_050 << EOF
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum -y install docker-ce docker-ce-cli containerd.io
+sudo systemctl start docker
+sudo docker pull sonarqube
+sudo firewall-cmd --zone=public --permanent --add-port=9000/tcp
+sudo firewall-cmd --reload
+sudo docker run --detach -p 9000:9000 sonarqube
+exit
+EOF
+```
+- NOTE: In the above commands what we are doing is: SSH into the instance -> install docker in instance -> start docker -> pull sonarQube docker image -> open firewall -> open port and run image
 
-- The Create Application is displayed. Select your application platform as JAVA EE.
-  
-    ![](images/200/2.png) 
+    ![](images/200/lab200_createBuildJob_6.png)
 
-- The Create Application is displayed. Enter a name for the application.
-  
-    ![](images/200/4.png) 
+- Click **Save**
 
-- Click Upload Archive button to upload generated war file and click Create.
+    ![](images/200/lab200_createBuildJob_7.png)
 
-    ![](images/200/6.png) 
+### **STEP 2**: Run the build job and check server deployment
 
-## Verifying the Application Deployment
+- Click on **Build now**
 
-### **STEP 1**: Verification
+    ![](images/200/lab200_createBuildJob_8.png)
 
-- After Application Container Cloud Service Instance is created, click the link.
+- Once the build start running click on **Build Log** to check the log and see what steps are being performed.
 
-    ![](images/200/9.png) 
+    ![](images/200/lab200_runBuildJob_1.png)
 
-- Add /alpha-office-product-catalog/products.jsp to view Alpha Office Product Catalog website.
+- Scroll down till the end of log to see success message.
 
-    ![](images/200/10.png) 
+    ![](images/200/lab200_runBuildJob_2.png)
 
-- You have successfully deployed the Java EE application using  Application Cloud Container Service. Click any product to view its static twitter popup.
+### **STEP 3**: Configure Developer Cloud Service to use SonarQube
 
-    ![](images/200/10_1.png) 
+- Click on **Project Administration** and then click on **Add SonarQube Server Connection**
 
-### **STEP 2**: Scale instance in the Application Container Cloud Service
+    ![](images/200/lab200_configureSonar_1.png)
 
-- Click overview tab inside AlphaOfficeProductCatalog instance.
+- In the form fill out details. Username and Password is **admin**. Then click **Create**
 
-    ![](images/200/11.png) 
+    ![](images/200/lab200_configureSonar_2.png)
 
-- Increase instances and memory according to your requirements.
+- Once added let's test if the connection works. Click on **Test Connection** and then check the message for the status.
 
-    ![](images/200/12.png) 
+    ![](images/200/lab200_configureSonar_3.png)
 
-- Click Apply to proceed.
+- Go back to Build tab and click on the build created in Lab 100 and click on **Configure**
 
-    ![](images/200/13.png) 
+    ![](images/200/lab200_configureSonar_4.png)
 
-- Proceed with either Rolling Restart with no downtime or Concurrent Restart brief downtime and click apply. 
+- Click on **Before Build**, then click on **Add Before Build Action** and select **SonarQube Settings**.
 
-    ![](images/200/14.png) 
+    ![](images/200/lab200_configureSonar_5.png)
 
-- Wait few minutes to progress activity.
+- Select the Sonar Server which we created for the dropdown list.
 
-    ![](images/200/15.png) 
+    ![](images/200/lab200_configureSonar_6.png)
 
-- You have successfully scaled up/down AlphaOfficeProductCatalog Application Container Cloud Service Instance.
+- Go the **Steps** and the click **Add Step** and select **Maven**.
 
-    ![](images/200/16.png) 
+    ![](images/200/lab200_configureSonar_7.png)
 
+- Here add the sonarQube server URL using the following command and then save once done.
 
+```
+sonar:sonar -Dsonar.host.url=SONARQUBE_SERVER_URL
+```
+
+- NOTE: Make sure to change the URL in the above command
+
+    ![](images/200/lab200_configureSonar_8.png)
+
+- Click on **Build Now** and once the job is running click on **Build Log**
+
+    ![](images/200/lab200_runBuild_1.png)
+
+- Check the logs, scroll down to see the status.
+
+    ![](images/200/lab200_runBuild_2.png)

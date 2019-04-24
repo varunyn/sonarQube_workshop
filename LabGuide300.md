@@ -1,9 +1,8 @@
-![](images/300/Picture300-lab.png)  
-Updated: 07/24/2018
+
 
 ## Introduction
 
-This lab focus on moving the on-premise WebLogic Server app to Java Cloud Service. Java Cloud Service is ideal for development, testing, user acceptance testing, staging and production. Also, it allows to instantly create dedicated and isolated WebLogic Server environments (11g or 12c version) to run your entire cluster at scale.
+This is the first of several labs that are part of the **Continous Code Inspection with Sonar Qube.** This workshop will walk you through how to manage application lifecycle and do code review using sonarQube.
 
 ## Objectives
 
