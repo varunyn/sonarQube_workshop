@@ -159,3 +159,9 @@ sonar:sonar -Dsonar.host.url=SONARQUBE_SERVER_URL
 - Check the logs, scroll down to see the status.
 
     ![](images/200/lab200_runBuild_2.png)
+
+- Check the IP to see the dashboard.
+
+
+### **STEP 4**: Run job to do analysis
+

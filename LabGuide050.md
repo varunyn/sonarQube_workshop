@@ -5,10 +5,9 @@
 
 This is the first of several labs that are part of the **Continous Code Inspection with Sonar Qube.** This workshop will walk you through how to manage application lifecycle and do code review using sonarQube.
 
-You will take on 2 Personas during the workshop. The **Lead Developer Persona**, who manages a team of developers writing and maintaining production applications and Richard **Devops manager** persona who's current challenge is providing the resources to host current applications on-premises.
-
-
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
+
+## Setup trial account
 
 ### **STEP 1**: Acquire an Oracle Cloud Trial or Workshop Account
 

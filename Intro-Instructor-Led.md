@@ -9,11 +9,8 @@
     - If you are attending an Oracle sponsored event, please **review your Event invitation** for more instruction on how to gain access to your Workshop Account.
 
 **Second**, ***Configure your Client Environment***
-- Your client enviroment **must be configured prior** to attempting the Hands-on-Workshop labs.
-- You have two options for configuring your workshop client environment.
-     - ***Option 1:*** You can install Virtual Box and download and run a pre-configured **Virtual Box Image**.
-     - ***Option 2:*** You can **install and configure** Eclipse, Brackets and Git on your laptop.
-- Both **Option 1 and 2 are documented** in the [Student Guide](StudentGuide.md). ***Please follow the instruction in the Student Guide*** prior to attempting the Labs.
+
+***Please follow the instruction in the Student Guide*** prior to attempting the Labs.
 
 ## How to View the Lab Guides
 
@@ -35,35 +32,37 @@ This Oracle Public Cloud DevOps Continuous Inspection with Sonar Qube will walk 
 
 **Reference the following Lab Guides by opening their Documentation Files:**
 
-## Lab 100: Overview of App in On-prem simulation
+## Lab 050: Trial account setup
 
-**Documenation**: [LabGuide100.md](LabGuide100.md)
+**Documenation**: [Lab Guide 050](LabGuide050.md)
 
-## Lab 200: Redeploy both Components to Application Container Cloud Service
+### Objectives
 
-**Documenation**: [LabGuide200.md](LabGuide200.md)
+## Lab 100: Configure Developer Cloud Service
+
+**Documenation**: [Lab Guide 100](LabGuide100.md)
+
+### Objectives
+- Get Started With Developer Cloud Service
+  - Create OCI Connection
+  - Create project in Developer Cloud Service Instance and configure git
+  - Configure Template VM through Developer Cloud Service
+  - Design a job and test it by building the application on your Template VM
+  
+## Lab 200: Deploying SonarQube application to Compute Instance
+
+**Documenation**: [Lab Guide 200](LabGuide200.md)
 
 ### Objectives
 
 - Deploying the Application to the Oracle Application Cloud Service Instance
 - Verifying the Application Deployment
 
-## Lab 300: Move on-premise Weblogic Server to Java Cloud Service
+## Lab 300: Fix issues in code and close issue in Developer Cloud Service
 
-**Documenation**: [LabGuide300.md](LabGuide300.md)
-
-### Objectives
-
-- Move on premise Weblogic to Oracle Java Cloud Service.
-  - Create database instance
-  - Create Java Cloud Service instance
-  - Move application to Java Cloud Service
-
-## Lab 400: Java Cloud Service Instance with AppToCloud
-
-**Documenation**: [LabGuide400.md](LabGuide400.md)
+**Documenation**: [Lab Guide 300](LabGuide300.md)
 
 ### Objectives
 
-- Exporting a WebLogic Server Domain to Oracle Cloud
-- Creating an Oracle Java Cloud Service Instance with AppToCloud
+- 
+

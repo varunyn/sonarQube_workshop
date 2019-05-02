@@ -6,18 +6,17 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
 ## Objectives
 
-- Move on premise WebLogic Server to Oracle Java Cloud Service.
-  - Create database instance
-  - Create Java Cloud Service instance
-  - Move application to Java Cloud Service
+- Fix the issue in code
+- Run the job to see the new analysis
+- Close issue.
 
 ## Required Artifacts
 
-For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the following links to set up:
+For this lab you will need Oracle Cloud account and Developer Cloud service instance.
 
-# On premise WebLogic Server to Java Cloud Service
+## Fixing the issue in code
 
-## Deploying the Application to the Oracle Java Cloud Service
+### **STEP 1**: Edit code in DevCS git repo
 
-### **STEP 1**: Create Database Instance in Cloud
+
 
