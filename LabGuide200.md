@@ -8,9 +8,8 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
 ## Objectives
 
-- Deploying the SonarQube server to the Compute Instance
-- Verifying the Server Deployment and run analysis
-- Creating issue ticket in DevCS. 
+- Deploy the SonarQube server to the Compute Instance
+- Verify the Server Deployment and run analysis
 
 ## Required Artifacts
 

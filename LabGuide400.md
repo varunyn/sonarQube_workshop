@@ -4,6 +4,8 @@
 
 This is the first of several labs that are part of the **Continous Code Inspection with Sonar Qube.** This workshop will walk you through how to manage application lifecycle and do code review using sonarQube.
 
+**_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
+
 ## Objectives
 
 - Create docker image and push it to Docker Hub.
