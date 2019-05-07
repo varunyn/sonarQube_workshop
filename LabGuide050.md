@@ -100,23 +100,19 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
     ![](images/050/lab100_Create_VCN_5.png)
 
-- Click on **Edit all rules**
+- Click on **Add Ingress Rules**.
+    ![](images/050/9.png)
 
-    ![](images/050/lab100_Create_VCN_6.png)
+- Enter Source CIDR 0.0.0.0/0 and destination port range **9000,8080**. We are opening port 9000 which is default port for running sonarQube which we will deploy in next lab and port 8080 which is default for our web service which we will deploy in lab 400.
 
-- Scroll down when and click **Another Ingress Rule**
+    ![](images/050/10.png)
 
-    ![](images/050/lab100_Create_VCN_7_1.png)
+- Once saved you can see the Ingress Rules as below.
 
-- Add source CIDR ```0.0.0.0/0``` and Destination Port Range ```9000```
+    ![](images/050/11.png)
 
-    ![](images/050/lab100_Create_VCN_7_2.png)
 
-- Scroll and click on **Save Securtiy List Rules**   
-
-    ![](images/050/lab100_Create_VCN_7_3.png)
-
-### **STEP 5**: Create Instance
+### **STEP 6**: Create Instance
 
 - Click on the hamburger menu on top right, then Compute and then click on **Instances**.
 
@@ -137,3 +133,5 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 - Click **Create**
 
     ![](images/050/lab100_Create_Instance_3_3.png)
+
+- Repeat the process and create one more instance named **JavaWebService**.

@@ -148,7 +148,7 @@ EOF
 sonar:sonar -Dsonar.host.url=SONARQUBE_SERVER_URL
 ```
 
-- NOTE: Make sure to change the URL in the above command
+- NOTE: Make sure to change the URL in the above command. It should Public IP address of the compute instance and the port which 9000.
 
     ![](images/200/lab200_configureSonar_8.png)
 
@@ -163,5 +163,22 @@ sonar:sonar -Dsonar.host.url=SONARQUBE_SERVER_URL
 - Check the IP to see the dashboard.
 
 
-### **STEP 4**: Run job to do analysis
+### **STEP 4**: Check the analysis
 
+- To check the anaylsis done by SonarQube, go to the SONARQUBE_SERVER_URL.
+
+    ![](images/200/lab200_soarqube_dashboard.png)
+
+- Login using username and password as admin.
+
+    ![](images/200/1.png)
+
+- Click on the **Projects** and there you click on jersey-example.
+
+    ![](images/200/2.png)
+
+- You will see the analysis report in the overview, to check the Issues click on Issues.
+    ![](images/200/3.png)
+
+- On the left side there are all the bugs reported in the code.
+    ![](images/200/4.png)
