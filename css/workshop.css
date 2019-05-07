@@ -2,23 +2,23 @@
 
 html,
 body {
-    padding: 0;
-    max-width: 100%;
+  padding: 0;
+  max-width: 100%;
 }
 
 td {
-    border: 1px solid #D3D3D3;
-    padding: 3px;
+  border: 1px solid #d3d3d3;
+  padding: 3px;
 }
 
 th {
-    background-color: #EEEEEE;
-    border: 1px solid #D3D3D3;
-    padding: 3px;
+  background-color: #eeeeee;
+  border: 1px solid #d3d3d3;
+  padding: 3px;
 }
 
 table {
-    border-spacing: 0;
+  border-spacing: 0;
 }
 
 img:not(.infra),
@@ -27,94 +27,94 @@ iframe:not(.infra),
 video:not(.infra),
 select:not(.infra),
 textarea:not(.infra) {
-    display: block !important;
-    /* margin: 0 auto !important; */
+  display: block !important;
+  /* margin: 0 auto !important; */
 }
 
 .md-button.md-fab.md-fab-top-right {
-    bottom: auto;
-    right: 20px;
-    top: 40px;
-    left: auto;
-    position: fixed;
+  bottom: auto;
+  right: 20px;
+  top: 40px;
+  left: auto;
+  position: fixed;
 }
 
 .interactive-img {
-    max-width: 100%;
-    padding: 7px 1px 1px 1px;
+  max-width: 100%;
+  padding: 7px 1px 1px 1px;
 }
 
 .interactive-frame {
-    border: none;
-    width: 100%;
+  border: none;
+  width: 100%;
 }
 
 md-dialog.fullscreen-dialog {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 md-toolbar.md-default-theme.md-hue-2:not(.md-menu-toolbar),
 md-toolbar.md-hue-2:not(.md-menu-toolbar) {
-    color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .menu-hamburger {
-    padding: 4px 1px 1px 0px;
-    height: 20px;
-    width: 20px;
+  padding: 4px 1px 1px 0px;
+  height: 20px;
+  width: 20px;
 }
 
 .float-right {
-    float: right;
+  float: right;
 }
 
 .mini-toolbar-tools {
-    font-size: 10px;
-    letter-spacing: .005em;
-    box-sizing: border-box;
-    font-weight: 400;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    width: 100%;
-    height: 32px;
-    max-height: 32px;
-    padding: 0 8px;
-    margin: 0;
+  font-size: 10px;
+  letter-spacing: 0.005em;
+  box-sizing: border-box;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  height: 32px;
+  max-height: 32px;
+  padding: 0 8px;
+  margin: 0;
 }
 
 .mini-toolbar {
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    font-size: 10px;
-    min-height: 32px;
-    width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  font-size: 10px;
+  min-height: 32px;
+  width: 100%;
 }
 
 .ttc md-toolbar.md-default-theme.md-hue-3:not(.md-menu-toolbar),
 .ttc md-toolbar.md-hue-3:not(.md-menu-toolbar) {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #006E87;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #006e87;
 }
 
 .md-button.md-default-theme.high-contrast-hover:hover {
-    background-color: rgb(10,10,90) !important;
+  background-color: rgb(10, 10, 90) !important;
 }
 
 .md-button.infra {
@@ -128,6 +128,12 @@ md-toolbar.md-hue-2:not(.md-menu-toolbar) {
 md-toolbar {
   height: 50px;
   min-height: 50px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+}
+
+.nav-up {
+  top: -50px;
 }
 
 .md-toolbar-tools.infra {
@@ -141,8 +147,8 @@ md-toolbar.layout-padding.infra {
 }
 
 .version-heading {
-    margin-top: 50px;
-    margin-left: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
 .version-box {
@@ -185,7 +191,8 @@ md-toolbar.layout-padding.infra {
 
 #interactive {
   height: calc(100vh - 61px);
-  width: calc(100vw - 4px)}
+  width: calc(100vw - 4px);
+}
 
 #labguide {
   /* height: 100vh; */
@@ -204,94 +211,116 @@ md-toolbar.layout-padding.infra {
 /*DESKTOP SETTINGS*/
 
 @media only screen and (min-width: 801px) {
-    #labguide {
-        margin: 0 auto;
-        padding: 3.25rem 10em;
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: 300;
-    }
+  #labguide {
+    margin: 0 auto;
+    padding: 3.25rem 10em;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+  }
 }
-
 
 /*LARGE DESKTOPS SCREENS*/
 
 @media only screen and (min-height: 830px) and (min-width: 960px) {
-    md-dialog.fullscreen-dialog {
-        height: 830px;
-        max-height: 830px;
-        max-width: 1700px;
-        width: 80%;
-    }
-    .interactive-frame {
-        border: none;
-        width: 100%;
-        height: 790px;
-    }
+  md-dialog.fullscreen-dialog {
+    height: 830px;
+    max-height: 830px;
+    max-width: 1700px;
+    width: 80%;
+  }
+  .interactive-frame {
+    border: none;
+    width: 100%;
+    height: 790px;
+  }
 }
-
 
 /*LAPTOP SCREENS*/
 @media only screen and (max-height: 829px) and (min-height: 701px) and (min-width: 960px) {
-    md-dialog.fullscreen-dialog {
-        height: 680px;
-        max-height: 700px;
-        max-width: 1300px;
-        width: 80%;
-    }
-    .interactive-frame {
-        height: 640px;
-    }
+  md-dialog.fullscreen-dialog {
+    height: 680px;
+    max-height: 700px;
+    max-width: 1300px;
+    width: 80%;
+  }
+  .interactive-frame {
+    height: 640px;
+  }
 }
 
 /*TINY SCREENS*/
 @media only screen and (max-height: 700px) and (min-width: 960px) {
-    md-dialog.fullscreen-dialog {
-        height: 90%;
-        max-height: 90%;
-        max-width: 959px;
-        width: 80%;
-    }
-    .interactive-frame {
-        height: 700px;
-    }
+  md-dialog.fullscreen-dialog {
+    height: 90%;
+    max-height: 90%;
+    max-width: 959px;
+    width: 80%;
+  }
+  .interactive-frame {
+    height: 700px;
+  }
 }
 
 @media only screen and (max-width: 959px) {
-    md-dialog.fullscreen-dialog {
-        height: 100%;
-        max-height: 100%;
-    }
-    .interactive-frame {
-        height: 1024px;
-    }
+  md-dialog.fullscreen-dialog {
+    height: 100%;
+    max-height: 100%;
+  }
+  .interactive-frame {
+    height: 1024px;
+  }
 }
-
 
 /*PHONE AND TABLET SETTINGS*/
 
 @media only screen and (max-width: 800px) {
-    #labguide {
-        margin: 0 auto;
-        padding: 1rem;
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: 300;
-    }
-    h1:not(.infra),
-    .modest-h1:not(.infra) {
-        font-size: 1.5rem;
-    }
-    h2:not(.infra),
-    .modest-h1:not(.infra) {
-        font-size: 1.25rem;
-    }
-    h3:not(.infra),
-    .modest-h1:not(.infra) {
-        font-size: 1rem;
-    }
-    p:not(.infra),
-    .modest-p:not(.infra) {
-        font-size: .85rem;
-        margin-bottom: 1rem;
-        margin-left: 15px;
-    }
+  #labguide {
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+  }
+  h1:not(.infra),
+  .modest-h1:not(.infra) {
+    font-size: 1.5rem;
+  }
+  h2:not(.infra),
+  .modest-h1:not(.infra) {
+    font-size: 1.25rem;
+  }
+  h3:not(.infra),
+  .modest-h1:not(.infra) {
+    font-size: 1rem;
+  }
+  p:not(.infra),
+  .modest-p:not(.infra) {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    margin-left: 15px;
+  }
+}
+
+.md-sidenav-left {
+  position: fixed;
+}
+
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: #ddd;
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: #ddf;
+  color: #000;
 }

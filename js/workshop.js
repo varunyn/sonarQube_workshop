@@ -441,3 +441,57 @@ labGuide.controller('labGuideController', ['$scope', '$http', '$mdSidenav', '$sa
         else return labs;
       }
     });
+
+
+// Hide md-toolbar on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('md-toolbar').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('md-toolbar').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('md-toolbar').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+$(window).scroll(function() {
+  var height = $(window).scrollTop();
+  if (height > 100) {
+      $('#back2Top').fadeIn();
+  } else {
+      $('#back2Top').fadeOut();
+  }
+});
+$(document).ready(function() {
+  $("#back2Top").click(function(event) {
+      event.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+  });
+
+});
