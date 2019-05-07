@@ -141,7 +141,7 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/31.png)
 
-- Give your new repo a name, brief description and select "Import existing repository". In the textbox that appears paste this link (GITHUB LINK HERE), then select "Create".
+- Give your new repo a name, brief description and select "Import existing repository". In the textbox that appears paste this link https://github.com/varunyn/twitter-feed-sonarQube.git , then select "Create".
 
   ![](images/100/32.png)
 
