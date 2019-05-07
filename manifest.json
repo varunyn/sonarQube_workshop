@@ -37,13 +37,13 @@
                 "number": "300",
                 "filename": "LabGuide300.md",
                 "title": "Lab 300: Fix issues in the code",
-                "description": ""
+                "description": "Looking for issues in SonarQube, creating issue in Developer Cloud Service and then solving the issue using built in git."
             },
             {
                 "number": "400",
                 "filename": "LabGuide400.md",
                 "title": "Lab 400: Deploy microservice to cloud",
-                "description": ""
+                "description": "Once the issues are fix from the code, deploy the the webservice as a docker container to cloud."
             }
         ]
     }
