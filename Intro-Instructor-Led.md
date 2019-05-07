@@ -14,7 +14,7 @@
 
 ## How to View the Lab Guides
 
-- The Labguides are best viewed using the Workshop's [GitHub Pages Website URL](https://derekoneil.github.io/cloud-native-devops-workshop/microservices)
+<!-- - The Labguides are best viewed using the Workshop's [GitHub Pages Website URL](https://derekoneil.github.io/cloud-native-devops-workshop/microservices) -->
 
 - Once you are viewing the Workshop's GitHub Pages website, you can see a list of Lab Guides at any time by clicking on the **Menu Icon**
 
@@ -26,7 +26,7 @@
 
 ## Continuous Inspection with Sonar Qube
 
-This Oracle Public Cloud DevOps Continuous Inspection with Sonar Qube will walk you through o understand the movement on a Java EE application from their on-prem Weblogic deployment to Oracle's Cloud, during which you will create and deploy Jave EE war files. You will take on 2 Personas during the workshop. The DevOps Manager Persona will add new features and keep the system stable, fast and available. The DevOps Manager will involve integrating development, testing, deployment and release cycle in twitter feed service and alpha product catalog. The Infrastructure person persona will extract Alpha Product Catalog war file and import into the WebLogic Server. During the workshop, you will get exposure to Oracle Developer Cloud Service and Oracle Application Container Cloud Service. Also, you will have option to familiar with Java Cloud Service and AppToCloud tool.
+This workshop will walk you through how to manage application lifecycle and do code review using sonarQube. Learn how SonarQube can save time and improve performance by reviewing code and how to to solve those bugs in Agile development.
 
 ## Workshop Details
 
@@ -37,6 +37,10 @@ This Oracle Public Cloud DevOps Continuous Inspection with Sonar Qube will walk 
 **Documenation**: [Lab Guide 050](LabGuide050.md)
 
 ### Objectives
+
+- Get Started With Oracle Cloud Infrastructure
+- Create Developer Cloud instance
+- Create VCN, compartment and compute instance.
 
 ## Lab 100: Configure Developer Cloud Service
 
@@ -55,8 +59,8 @@ This Oracle Public Cloud DevOps Continuous Inspection with Sonar Qube will walk 
 
 ### Objectives
 
-- Deploying the Application to the Oracle Application Cloud Service Instance
-- Verifying the Application Deployment
+- Deploy the SonarQube server to the Compute Instance
+- Verify the Server Deployment and run analysis
 
 ## Lab 300: Fix issues in code and close issue in Developer Cloud Service
 
@@ -64,5 +68,17 @@ This Oracle Public Cloud DevOps Continuous Inspection with Sonar Qube will walk 
 
 ### Objectives
 
-- 
+- Run the job to see the new analysis in SonarQube.
+- Create issue in Developer Cloud Service
+- Fix the issue in code
+- Close issue in Developer Cloud Service.
 
+## Lab 400: Deploy microservice to cloud
+
+**Documenation**: [Lab Guide 400](LabGuide400.md)
+
+### Objectives
+
+- Create docker image and push it to Docker Hub.
+- Create compute instance using Docker image.
+- Test the application.

@@ -1,47 +1,50 @@
 {
     "workshop": {
-        "title": "WLS On-Prem to ACCS",
-        "description": "Description of this workshop.",
+        "title": "Continuous Inspection with Sonar Qube",
+        "description": "This workshop will walk you through how to manage application lifecycle and do code review using sonarQube. Learn how SonarQube can save time and improve performance by reviewing code and how to to solve those bugs in Agile development",
         "theme": "default",
         "interactive":"https://launch.oracle.com/?",
         "labs": [
             {
                 "number": "0",
                 "filename": "Intro-Instructor-Led.md",
-                "title": "Intro - Instructor Led",
+                "title": "Read Me First",
                 "description": "Step-by-step workshop instructions"
+
+            },
+            {
+                "number": "50",
+                "filename": "LabGuide050.md",
+                "title": "Lab 050:  Trial account set up",
+                "description": "Setup trial account and provision Developer Cloud Service Instance. Also creaeting compartment, VCN and instance in OCI"
 
             },
             {
                 "number": "100",
                 "filename": "LabGuide100.md",
-                "title": "Lab 100: Agile Project Management, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage.",
-                "description": "Use Developer Cloud Service to create issues, tasks, and sprints, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage, plus an even longer section of text that will almost assuredly wrap unto the proximate lineage."
+                "title": "Lab 100:  Configure Developer Cloud Service",
+                "description": "Create project in Developer Cloud Service, clone project from Git repo and configure project to run build jobs."
 
             },
             {
                 "number": "200",
                 "filename": "LabGuide200.md",
-                "title": "Lab 200:  Title of Lab 200",
-                "description": "Short description of lab 200"
+                "title": "Lab 200:  Configure SonarQube Server",
+                "description": "Deploying SonarQube server in Compute Instance, connecting it to Developer Cloud Service and then running analysis on the project to check for potential issues and bug."
 
             },
             {
                 "number": "300",
                 "filename": "LabGuide300.md",
-                "title": "Lab 300:  Title of Lab 300",
-                "description": "Short description of lab 300"
-
+                "title": "Lab 300: Fix issues in the code",
+                "description": "Looking for issues in SonarQube, creating issue in Developer Cloud Service and then solving the issue using built in git."
             },
             {
                 "number": "400",
                 "filename": "LabGuide400.md",
-                "title": "Lab 400: Title of Lab 400",
-                "description": "Short description of lab 400"
-
+                "title": "Lab 400: Deploy microservice to cloud",
+                "description": "Once the issues are fix from the code, deploy the the webservice as a docker container to cloud."
             }
-
-
         ]
     }
 }
