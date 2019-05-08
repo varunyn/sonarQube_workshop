@@ -17,7 +17,7 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
 For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the following links to set up:
 
-## Deploying the Application to the Oracle Java Cloud Service
+## Run a build job in Developer Cloud Service
 
 ### **STEP 1**: Access Developer Cloud Service and Create OCI Connection
 
