@@ -72,7 +72,7 @@ sawLIbtlGQwtd8mO8uHFHW8kMEDei/qL+WhgimdeJeF2k8Xv939N
 
 - Paste the following commands in the Unix Shell
 
-```
+```bash
 ssh -o StrictHostKeyChecking=no opc@PUT_YOUR_PUBLIC_IP_ADDRESS_OF_THE_INSTANCE_CREATED_IN_LAB_050 << EOF
 sudo yum install -y yum-utils \
   device-mapper-persistent-data \
@@ -89,7 +89,14 @@ sudo docker run --detach -p 9000:9000 sonarqube
 exit
 EOF
 ```
-- NOTE: In the above commands what we are doing is: SSH into the instance -> install docker in instance -> start docker -> pull sonarQube docker image -> open firewall -> open port and run image
+- NOTE: In the above commands what we are doing is: 
+    - SSH into the instance 
+    - Install docker in instance 
+    - Start docker
+    - Pull sonarQube docker image 
+    - Open firewall  
+    - open port 9000 and run docker image 
+    - exit ssh
 
     ![](images/200/lab200_createBuildJob_6.png)
 

@@ -103,6 +103,8 @@ EOF
 
 NOTE: Replace the IP address with the IP address of your compute image, docker image name from your docker hub.
 
+- Paste the commands in Unix Shell and click **Save**.
+
     ![](images/400/15.png)
 
 - Build the job. Check the logs.
