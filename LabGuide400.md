@@ -84,7 +84,7 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 - Paste the below command to the shell
 
 ```
-ssh -o StrictHostKeyChecking=no opc@ENTER_THE_IP_ADDRESS_HERE << EOF
+ssh -o StrictHostKeyChecking=no opc@ENTER_THE_IP_ADDRESS_HERE_OF_JavaWebService_INSTANCE << EOF
 sudo yum install -y yum-utils \
   device-mapper-persistent-data \
   lvm2
@@ -101,7 +101,7 @@ exit
 EOF
 ```
 
-NOTE: Replace the IP address with the IP address of your compute image, docker image name from your docker hub.
+NOTE: Replace the IP address with the IP address of your JavaWebService compute image created in lab 050, docker image name from your docker hub.
 
 - Paste the commands in Unix Shell and click **Save**.
 
