@@ -91,9 +91,17 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/20.png)
 
-- Give the template a name, the guide follows the name **Build VM**. Add a brief description and leave the platform as the default value.
+- Give the template a name, the guide follows the name **ocivm**. Add a brief description and leave the platform as the default value.
 
   ![](images/100/21.png)
+
+- Once you see the VM click on **Configure Software**.
+
+    ![](images/100/21-1.png)
+
+- Search for Docker and the in the result click Clickon Plus sign in **Docker 1** and it should be listed on right panel as **Selected Software**. Click **Done**
+
+    ![](images/100/21-2.png)
 
 ### **STEP 3**: Create Developer Cloud Project and Configure Git
 
@@ -131,34 +139,30 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
 ### **STEP 4**: Configure and Run Successful Build Job
 
-- You will now see the file structure imported from github on your page, its time to build using your VM template. If the side menu is not open, once more select the hamburger from the top left and select "Builds".
+- You will now see the file structure imported from github on your page, its time to build using your VM template. If the side menu is not open, once more select the hamburger from the top left and select **Builds** and then click on **Create Job**
 
-  ![](images/100/33.png)
-
-- Select the blue button labeled "Create Job".
-
-  ![](images/100/34.png)
+    ![](images/100/33.png)
 
 - Give the job a descriptive name and a brief description. Then select the template you created earlier from the dropdown. With everything filled out, select "Create".
 
-  ![](images/100/35.png)
+    ![](images/100/35.png)
 
 - You will be taken to the Job Configuration page for your new job. The first thing you need to is connect the git repo you just established to the job. Select "Add Git" to see the options then select "Git".
 
-  ![](images/100/36.png)
+    ![](images/100/36.png)
 
 - Using the repository dropdown select your git repository. Leave everything else as default. Then from the Nav-bar above select "Steps".
 
-  ![](images/100/37.png)
+    ![](images/100/37.png)
 
 - Select "Add Step" and from the dropdown select "Maven".
 
-  ![](images/100/38.png)
+    ![](images/100/38.png)
 
 - Goals should read **clean install** and POM File should read **pom.xml**. Then in the upper right select save.
 
-  ![](images/100/39.png)
+    ![](images/100/39.png)
 
 - You will be taken to the home page for the job. Select "Build Now", this will provision a VM spec'd to your template, using your OCI connection to build the app you have imported from github. While you see "Waiting for executor" the OCI instance is being provisioned, once you see a progress bar then Developer Cloud Service is running the steps you established in your job inside the OCI instance. When complete you should see a check mark next to the job.
 
-  ![](images/100/41.png)
+    ![](images/100/41.png)

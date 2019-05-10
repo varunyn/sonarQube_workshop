@@ -78,6 +78,18 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
   ![](images/100/4.png)
 
+- Once you see the page, click on **Create Instance**
+
+    ![](images/050/lab050_Devcs_1.png)
+
+- In the form give the name to the Instance, we give it name Demo but you can choose whatever you prefer. In region select **No Preference**, click **Next**
+
+    ![](images/050/lab050_Devcs_2.png)
+
+- Confirm the detials and click on **Create** 
+
+    ![](images/050/lab050_Devcs_3.png)
+
 ### **STEP 4**: Create Compartment
 
 - Click on the hamburger menu on the top left and then scroll to **identity** and then click **Compartments** .
