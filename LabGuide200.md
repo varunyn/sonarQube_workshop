@@ -151,7 +151,7 @@ EOF
 - Here add the sonarQube server URL using the following command and then save once done.
 
 ```
-sonar:sonar -Dsonar.host.url=SONARQUBE_SERVER_URL
+sonar:sonar -Dsonar.host.url=<SONARQUBE_SERVER_URL>
 ```
 
 - NOTE: Make sure to change the URL in the above command. It should Public IP address of the compute instance and the port which 9000.
@@ -171,7 +171,7 @@ sonar:sonar -Dsonar.host.url=SONARQUBE_SERVER_URL
 
 ### **STEP 4**: Check the analysis
 
-- To check the anaylsis done by SonarQube, go to the SONARQUBE_SERVER_URL.
+- To check the anaylsis done by SonarQube, go to the SONARQUBE_SERVER_URL.  Add port :9000 at the end of url
 
     ![](images/200/lab200_soarqube_dashboard.png)
 

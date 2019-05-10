@@ -58,7 +58,7 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
 
     ![](images/300/8.png)
 
-- Repeat the process and go to file TwitterService.java, path as shown in following image and click on pencial icon to edit.
+- Repeat the process and go to file TwitterService.java, path as shown in following image and click on pencil icon to edit.
 
     ![](images/300/9.png)
 
