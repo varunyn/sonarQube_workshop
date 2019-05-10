@@ -19,7 +19,13 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
 
 ### **STEP 1**: Create build job to deploy SonarQube docker image in Compute Instance.
 
--  Click on **Create Job** 
+- **Note:Continuing Lab100, make sure you are in Developer Cloud Service Instance. If not follow the below steps click one Hamburger menu on left top and select Developer, then on the following page click on hamburger menu on right of the instance and the click on Access Service Instance.**
+
+    ![](images/200/lab200_access_devcs_1.png) 
+
+    ![](images/200/lab200_access_devcs_2.png) 
+
+- Click on **Create Job** 
 
     ![](images/200/lab200_createBuildJob_1.png) 
 
