@@ -17,19 +17,19 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
 For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the following links to set up:
 
-## Run a build job in Developer Cloud Service
+## Run a Build Job in Developer Cloud Service
 
 ### **STEP 1**: Configure OCI connection in Developer Cloud Service
 
-- You should see the Developer Cloud Instance you provisioned in the previous lab. Ensure it is in the ready state then click the menu icon to the right of the name and with the options visible select "Access Service Instance".
+- You should see the Developer Cloud Instance you provisioned in the previous lab. Ensure it is in the ready state then click the menu icon to the right of the name and with the options visible select **Access Service Instance**.
 
   ![](images/100/5.png)
 
-- Now you have landed in the dashboard of your Developer Cloud Service instance. You will notice a warning informing you that you must configure storage to continue with the service. Start the process by clicking "OCI Account" from the horizontal menu below the warning message.
+- Now you have landed in the dashboard of your Developer Cloud Service instance. You will notice a warning informing you that you must configure storage to continue with the service. Start the process by clicking **OCI Account** from the horizontal menu below the warning message.
 
   ![](images/100/6.png)
 
-- Click "Connect" to begin configuring the connection.
+- Click **Connect** to begin configuring the connection.
 
   ![](images/100/7.png)
 
@@ -37,7 +37,7 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/7a.png)
 
-- First in the OCI console that you started in (the tab should still be open). Expand the same top left hamburger you used to originally access your Service Dashboard. Scroll down to and hover over "Administration" then select "Tenancy Details".
+- First in the OCI console that you started in (the tab should still be open). Expand the same top left hamburger you used to originally access your Service Dashboard. Scroll down to and hover over **Administration** then select **Tenancy Details**.
 
   ![](images/100/8.png)
 
@@ -45,19 +45,19 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/9.png)
 
-- With all of the tenancy information complete, again expand the hamburger in the top left. This time scroll and hover over "Identity" then select "Users" from the options.
+- With all of the tenancy information complete, again expand the hamburger in the top left. This time scroll and hover over **Identity** then select **Users** from the options.
 
   ![](images/100/10.png)
 
-- Select the user that does NOT begin with "oracleidentitycloudservice/"; it should be just the email address you use to login to the cloud.
+- Select the user that does NOT begin with **oracleidentitycloudservice/**; it should be just the email address you use to login to the cloud.
 
   ![](images/100/11.png)
 
-- From the user details page copy the User OCID and paste it into the OCI Connection form. Next you will need to create a fingerprint for the user using the keys provided to you in the lab materials. Open the private key in any text editor and copy its contents in entirety into the "Private Key" field on the OCI connection form. Return to the user details page and then select "Add Public Key" from the API keys section.
+- From the user details page copy the User OCID and paste it into the OCI Connection form. Next you will need to create a fingerprint for the user using the keys provided to you in the lab materials. Open the private key in any text editor and copy its contents in entirety into the **Private Key** field on the OCI connection form. Return to the user details page and then select **Add Public Key** from the API keys section.
 
   ![](images/100/12.png)
 
-- To obtain the fingerprint you must paste the public key into the provided field. Open the public key and copy its contents the same way you did for the private key. This time paste the key into the field and select "Add".
+- To obtain the fingerprint you must paste the public key into the provided field. Open the public key and copy its contents the same way you did for the private key. This time paste the key into the field and select **Add**.
 
   ![](images/100/13.png)
 
@@ -65,7 +65,7 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/14.png)
 
-- Now you will just need to obtain the Compartment OCID from the compartment you created in Lab 50. Expand the top left hamburger once more scroll to and hover over "Identity" and select "Compartments".
+- Now you will just need to obtain the Compartment OCID from the compartment you created in Lab 50. Expand the top left hamburger once more scroll to and hover over **Identity** and select **Compartments**.
 
   ![](images/100/15.png)
 
@@ -77,17 +77,17 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/17.png)
 
-- The form should now be completely filled except for passphrase which you will not use in this workshop. Click "Validate" on the bottom of the form and wait to see that compute and storage connections are successful then click "Save".
+- The form should now be completely filled except for passphrase which you will not use in this workshop. Click **Validate** on the bottom of the form and wait to see that compute and storage connections are successful then click **Save**.
 
   ![](images/100/18.png)
 
 ### **STEP 2**: Create VM Template for Job Execution
 
-- First though you must create a Virtual Machine template. From the same Nav-bar you selected "OCI Connection", select "Virtual Machine Templates".
+- First though you must create a Virtual Machine template. From the same Nav-bar you selected **OCI Connection**, select **Virtual Machine Templates**.
 
   ![](images/100/19.png)
 
-- Select "Create".
+- Select **Create**.
 
   ![](images/100/20.png)
 
@@ -105,19 +105,19 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
 ### **STEP 3**: Create Developer Cloud Project and Configure Git
 
-- Now that you have several of the tools within Developer Cloud Service setup to handle a project, you can create a project within the service. From the nav-bar select "Projects". Select "Create".
+- Now that you have several of the tools within Developer Cloud Service setup to handle a project, you can create a project within the service. From the nav-bar select **Projects**. Select **Create**.
 
   ![](images/100/25.png)
 
-- Give the project name **SonarQube_demo** and add a brief description; the remaining values can be left in their default settings. Select "Next".
+- Give the project name **SonarQube_demo** and add a brief description; the remaining values can be left in their default settings. Select **Next**.
 
   ![](images/100/26.png)
 
-- Select "Empty Project" and click "Next".
+- Select **Empty Project** and click **Next**.
 
   ![](images/100/27.png)
 
-- You can leave the Wiki Markup field set to Markdown. Select "Finish".
+- You can leave the Wiki Markup field set to Markdown. Select **Finish**.
 
   ![](images/100/28.png)
 
@@ -125,15 +125,15 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/29.png)
 
-- You will land in the "Project Home" of your new project. Select the hamburger icon in the top left and then select "Git" from the list of options.
+- You will land in the **Project Home** of your new project. Select the hamburger icon in the top left and then select **Git** from the list of options.
 
   ![](images/100/30.png)
 
-- Select "Create Repository".
+- Select **Create Repository**.
 
   ![](images/100/31.png)
 
-- Give your new repo a name, brief description and select "Import existing repository". In the textbox that appears paste this link https://github.com/varunyn/twitter-feed-sonarQube.git , then select "Create".
+- Give your new repo a name, brief description and select **Import existing repository**. In the textbox that appears paste this link https://github.com/varunyn/twitter-feed-sonarQube.git , then select **Create**.
 
   ![](images/100/32.png)
 
@@ -143,19 +143,19 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
     ![](images/100/33.png)
 
-- Give the job a descriptive name and a brief description. Then select the template you created earlier from the dropdown. With everything filled out, select "Create".
+- Give the job a descriptive name and a brief description. Then select the template you created earlier from the dropdown. With everything filled out, select **Create**.
 
     ![](images/100/35.png)
 
-- You will be taken to the Job Configuration page for your new job. The first thing you need to is connect the git repo you just established to the job. Select "Add Git" to see the options then select "Git".
+- You will be taken to the Job Configuration page for your new job. The first thing you need to is connect the git repo you just established to the job. Select **Add Git** to see the options then select **Git**.
 
     ![](images/100/36.png)
 
-- Using the repository dropdown select your git repository. Leave everything else as default. Then from the Nav-bar above select "Steps".
+- Using the repository dropdown select your git repository. Leave everything else as default. Then from the Nav-bar above select **Steps**.
 
     ![](images/100/37.png)
 
-- Select "Add Step" and from the dropdown select "Maven".
+- Select **Add Step** and from the dropdown select **Maven**.
 
     ![](images/100/38.png)
 
@@ -163,6 +163,6 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
     ![](images/100/39.png)
 
-- You will be taken to the home page for the job. Select "Build Now", this will provision a VM spec'd to your template, using your OCI connection to build the app you have imported from github. While you see "Waiting for executor" the OCI instance is being provisioned, once you see a progress bar then Developer Cloud Service is running the steps you established in your job inside the OCI instance. When complete you should see a check mark next to the job.
+- You will be taken to the home page for the job. Select **Build Now**, this will provision a VM spec'd to your template, using your OCI connection to build the app you have imported from github. While you see **Waiting for executor** the OCI instance is being provisioned, once you see a progress bar then Developer Cloud Service is running the steps you established in your job inside the OCI instance. When complete you should see a check mark next to the job.
 
     ![](images/100/41.png)

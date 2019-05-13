@@ -17,17 +17,12 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
 ### **STEP 1**: Acquire an Oracle Cloud Trial or Workshop Account
 
-- Bookmark this page for future reference.
-
-- Please click on the following link to create your Free Account, and complete all the required steps to get your free Oracle Cloud Trial Account. When you complete the registration process you'll receive a $300 credit that will enable you to complete the lab for free. Additionally, you'll have 1000s of hours left over to continue to explore the Oracle Cloud.
-
-    - Soon after requesting your trial you will receive the following email. You may begin working on Lab 100 before you receive this email, but you will not be able to start Lab 200 until you have received it.
+- Wait until you receive the following email before proceeding to the next steps in the lab. Please make note of your temporary password in this email.
 
     ![](images/050/100_1_1.png)
 
-    ***setup a password***
-
 ### **STEP 2**: Login to your Oracle Cloud Account
+
 - From any browser, go to the URL:
     `https://cloud.oracle.com`
 
@@ -50,23 +45,28 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
     ![](images/050/3.png)
 
-- Click on the hamburger menu on the top left corner and scroll down and click on **My servcies dashboard** which will take you to the service dashboard page.
+- Click on the hamburger menu on the top left corner and scroll down and click on **My Services Dashboard** which will take you to the service dashboard page.
 
      ![](images/050/4.png)
 
-- If all your services are not visible, **click** on the **Customize Dashboard**, you can add services to the dashboard by clicking **Show.** For this workshop, you will want to ensure that you are showing at least the **Java, Application Container, Database and Storage Classic** cloud services. If you do not want to see a specific service, click **Hide**
+- If all your services are not visible, **click** on the **Customize Dashboard**.
+  ![](images/050/5.png)
 
-    ![](images/050/5.png)
+- You can add services to the dashboard by clicking **Show.** For this workshop, you will want to ensure that you are showing the **Developer** cloud services.
 
     ![](images/050/6.png)
 
-### **STEP 3**: Create Developer cloud service instance
+- Click on the **hamburger menu** in the upper left corner and **Select Compute** from the dropdown.
 
-- From the OCI Dashboard click the hamburger icon in the top left to expand the services menu.
+![](images/050/LabGuide050-827bb0a9.png)
+
+### **STEP 3**: Create the Developer Cloud Service Instance
+
+- From the OCI Dashboard **click the hamburger icon** in the top left to expand the services menu.
 
   ![](images/100/1.png)
 
-- With the menu open scroll down until you see "My Services Dashboard", once you find it, select it to navigate to your services.
+- With the menu open scroll down until you see **My Services Dashboard**, once you find it, select it to navigate to your services.
 
   ![](images/100/2.png)
 
@@ -74,7 +74,7 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
   ![](images/100/3.png)
 
-- Within the services menu first click "Services" to expand the list. With the full list visible scroll to and select "Developer".
+- Within the services menu first click **Services** to expand the list. With the full list visible scroll to and select **Developer**.
 
   ![](images/100/4.png)
 
@@ -86,7 +86,7 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
     ![](images/050/lab050_Devcs_2.png)
 
-- Confirm the detials and click on **Create** 
+- Confirm the detials and click on **Create**
 
     ![](images/050/lab050_Devcs_3.png)
 
