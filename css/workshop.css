@@ -324,3 +324,20 @@ md-toolbar.layout-padding.infra {
   background-color: #ddf;
   color: #000;
 }
+
+
+/* #steps{
+    width: 60px;
+    position: fixed;
+    bottom: 100px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+stepsLi{
+  color: #333333;
+  font-size: 13px;
+  margin: 0 0 0 15px;
+  padding: 0 0 11px 0;
+} */

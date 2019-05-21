@@ -156,12 +156,16 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
     ![](images/050/lab100_Create_Instance_3.png)
 
-- Choose the public key provided or paste it.
+- Paste the following public key.
 
-    ![](images/050/lab100_Create_Instance_3_2.png)
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCTmnQPppvuP15M5jzTrRoMzWpERDIV9r0Eq1mj+5rEkFpWaRHccgkGZRpjTBcqWn83UGG1bmffDdCy4EkWWydNu5Jll3L2MFrF9TBPg4Zj2Mh2V5x3DQoszypDHiGl7sp1z+LGYpPCmdPcuz/SrLbMrK22X6jHtEZJX56YfZ5FEVKiiOsq/Ae48zbxEUUKZAQ5YdWSLLiaOAmpMqe2qQvyiRiz0PAsQp8qP6pGjqxxMBZacZGlPCDurD6E5Xxh/V+TL8Q0X73N1FexlIuO4x5KoAJQdQQrSRETJuNRC1h7BNNAn9u0Jby9U0qo20UtgLQbpBSnb0FoLuwUxmPUpc/r varuny@Varuns-MacBook-Pro-2.local
+```
+
+   ![](images/050/lab100_Create_Instance_3_2.png)
 
 - Click **Create**
 
     ![](images/050/lab100_Create_Instance_3_3.png)
 
-- Repeat the process and create one more instance named **JavaWebService**.
+- Repeat the process and create one more instance named **JavaWebService**. Use the same public key as above.
