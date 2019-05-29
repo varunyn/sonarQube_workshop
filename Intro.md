@@ -2,7 +2,7 @@
 
 ## About this Workshop
 
- Welcome to Continuous Inspection with SonarQube workshop. This workshop will walk you application lifecycle management with embedded code review using SonarQube. It will showcase how SonarQube can save time and improve code quality directly inside agile development process.
+ Welcome to Continuous Inspection with SonarQube workshop. This workshop will walk you application lifecycle management with embedded code review using SonarQube. It will showcase how SonarQube can save time and improve code quality directly inside agile development process. To get a better idea of the business challenge you will solve please watch the video below before proceeding to the next steps.
 
  <a href="add video link" target="vid">
 ![](images/Intro-4447c2f9.png)
