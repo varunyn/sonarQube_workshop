@@ -7,43 +7,43 @@
         "labs": [
             {
                 "number": "0",
-                "filename": "Intro-Instructor-Led.md",
-                "title": "Read Me First",
-                "description": "Step-by-step workshop instructions"
+                "filename": "README.md",
+                "title": "Getting Started",
+                "description": "Request a Trial Account."
 
             },
             {
                 "number": "50",
                 "filename": "LabGuide050.md",
-                "title": "Lab 050:  Trial account set up",
-                "description": "Setup trial account and provision Developer Cloud Service Instance. Also creaeting compartment, VCN and instance in OCI"
+                "title": "Lab 050: Setup",
+                "description": "Setup trial account and provision Developer Cloud Service. Create compartment, VCN and instance in OCI."
 
             },
             {
                 "number": "100",
                 "filename": "LabGuide100.md",
-                "title": "Lab 100:  Configure Developer Cloud Service",
+                "title": "Lab 100: Configure Developer Cloud Service",
                 "description": "Create project in Developer Cloud Service, clone project from Git repo and configure project to run build jobs."
 
             },
             {
                 "number": "200",
                 "filename": "LabGuide200.md",
-                "title": "Lab 200:  Configure SonarQube Server",
+                "title": "Lab 200: Configure SonarQube Server",
                 "description": "Deploying SonarQube server in Compute Instance, connecting it to Developer Cloud Service and then running analysis on the project to check for potential issues and bug."
 
             },
             {
                 "number": "300",
                 "filename": "LabGuide300.md",
-                "title": "Lab 300: Fix issues in the code",
-                "description": "Looking for issues in SonarQube, creating issue in Developer Cloud Service and then solving the issue using built in git."
+                "title": "Lab 300: Fix Issues in the Code",
+                "description": "Look for issues identified in SonarQube, create a issue in Developer Cloud Service and resolve issue using built in git."
             },
             {
                 "number": "400",
                 "filename": "LabGuide400.md",
-                "title": "Lab 400: Deploy microservice to cloud",
-                "description": "Once the issues are fix from the code, deploy the the webservice as a docker container to cloud."
+                "title": "Lab 400: Deploy Microservice to Cloud",
+                "description": "Deploy the fixed code as a webservice inside a Docker container to cloud."
             }
         ]
     }

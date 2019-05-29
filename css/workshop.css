@@ -326,18 +326,6 @@ md-toolbar.layout-padding.infra {
 }
 
 
-/* #steps{
-    width: 60px;
-    position: fixed;
-    bottom: 100px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+md-toolbar ~ md-content > md-list {
+    padding: 30px 0px;
 }
-
-stepsLi{
-  color: #333333;
-  font-size: 13px;
-  margin: 0 0 0 15px;
-  padding: 0 0 11px 0;
-} */
