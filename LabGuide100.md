@@ -65,7 +65,7 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/LabGuide100-c5a01c33.png)
 
-- Next you will need to create a fingerprint for the user. Copy the following private key contents in entirety into the **Private Key** field on the OCI connection form.
+- Next you will need to create a fingerprint for the user. Copy the following private key contents in entirety.
 
   ```
   -----BEGIN RSA PRIVATE KEY-----
@@ -96,6 +96,7 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
   IaVaz9BPpzvv/QVv/tob5T8JZFuJB6hzFK9+Fx3dc9AXng+TlsgP
   -----END RSA PRIVATE KEY-----
   ```
+- Paste into the **Private Key** field on the OCI connection form.
 
   ![](images/100/LabGuide100-2d41b2e5.png)
 
@@ -103,7 +104,7 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/LabGuide100-cd397db8.png)  
 
-- To obtain the fingerprint you must paste the public key into the provided field. This time paste the key into the field and select **Add**. Paste the following public key
+- To obtain the fingerprint you must paste the public key into the provided field. Copy the key below and paste into the field. then select **Add**.
 
     ```
 -----BEGIN PUBLIC KEY-----
@@ -131,7 +132,7 @@ lwIDAQAB
 
   ![](images/100/16.png)
 
-- Copy the compartment OCID and then paste it into the corresponding field on the OCI Connection form.
+- **Copy the compartment OCID** and then paste it into the corresponding field on the OCI Connection form.
 
   ![](images/100/17.png)
 
@@ -149,7 +150,7 @@ lwIDAQAB
 
   ![](images/100/20.png)
 
-- Give the template a name, the guide follows the name **ocivm**. Add a brief description and leave the platform as the default value.
+- Give the template a name, the guide follows the name **ocivm**. Add a brief description and leave the platform as the default value. Then click **Create**.
 
   ![](images/100/21.png)
 
@@ -157,7 +158,7 @@ lwIDAQAB
 
     ![](images/100/21-1.png)
 
-- Search for Docker and the in the result click Clickon Plus sign in **Docker 1** and it should be listed on right panel as **Selected Software**. Click **Done**
+- Search for Docker and  click on Plus sign for **Docker 1**. It should add the item to the right panel as **Selected Software**. Click **Done**
 
     ![](images/100/21-2.png)
 
