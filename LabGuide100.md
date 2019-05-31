@@ -21,6 +21,14 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
 ### **STEP 1**: Configure OCI connection in Developer Cloud Service
 
+- Navigate back to your MyServices dashboard by selecting the **Hamburger Menu** and clicking **MyServices Dashboard**.
+
+  ![](images/050/4.png)
+
+- Expand the **Developer Hamburger Menu** and select **Open Service Console**.
+
+  ![](images/100/LabGuide100-502d58d4.png)
+
 - You should see the Developer Cloud Instance you provisioned in the previous lab. Ensure it is in the ready state then click the menu icon to the right of the name and with the options visible select **Access Service Instance**.
 
   ![](images/100/5.png)
@@ -53,42 +61,50 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
   ![](images/100/11.png)
 
-- From the user details page copy the User OCID and paste it into the OCI Connection form. Next you will need to create a fingerprint for the user. Copy the following private key contents in entirety into the **Private Key** field on the OCI connection form. Return to the user details page and then select **Add Public Key** from the API keys section.
+- From the user details page copy the User OCID and paste it into the OCI Connection form.
 
-```
------BEGIN RSA PRIVATE KEY-----
-MIIEowIBAAKCAQEA4p45aXJuslQTMPhx09ITEp5YZdgOUGKYCTz9npnlrxBem1xK
-gUxogkcBQp3NvI7IBv8l4CWxn2y3BxcR9Br00scjeiPZjwxIg2GgapA8xBfdf68C
-mMFMqCN/RhcDuFgTkK2Zo1unVyaox1piQJkrlJ7ocZWkDojZ5vgisYDAHFPYGjx3
-Nkl5dZrhtZuH4smaPp8r9kNE0U7cFJGoIUFymPLGnOVFzGYFz+myquf/basrbFpR
-fRqz+GAQePp+ybthglpmZUJlAc+Jo6JEcGMJCavmOCiJ/vHudCWXfEUYt6lVI33H
-Tnp4WlygeuoPB3dLdv+f/+5Hmjsl9o8tcmtRlwIDAQABAoIBAEVisK1qjh4nw+CA
-kUmLzq8qsGIubuOJ7IcXl4fSExMw7eafsWg5Xt5UozwkWPPcu734rT4eDG6FuNyA
-4cxd3IwU0PX6uAgmeKVRZO57zz8zF2yaxy7CMJhilft93HO68/KeVKZBz9DNU2wG
-boLc4w0UQpNUf/C7Ugx3+RdkFm4VYlbXwhGVmPdPmVShph+EXmgBuTKBy9K1kuYA
-KEBu3ffYBecgzHAObwv3rafvzkXoIRFj4hEtNYPyVK3c3rNH+yLCyKjVExA/Xdfs
-s/D37yCzj7YZvRiqvxW+buItP8nK7yS0VOGJ1FjhG2Vf7jioDRzKBkcwsrJFlNea
-fzJanaECgYEA9RV/bhW+ukGOc7UjHiDU1whKBCM0JbhHBsUn4Cxe+82KduV1NBWG
-GUV9tXoJbMn/SZfX3TxrIZKspsedr4mqgFirDStsS22Gzmfi7GyVVVzfP2STt97o
-1UFOfVOC/Y1jVoFzgtZ5dch2PL1D6Rf1ZxYsb+try4cFxnMh/GMYP1kCgYEA7LYs
-jbcxBrzvAHWm5K2JhUfVttzyT1d5txrc2qbx8m9fQasNvKI/L5dS1dMuqgp+tO2u
-ec0151miQh2Hni5zizdWQThvtNN0qx3PeLRs61EcxBjwtqOy9dPTV+ZQOsQSzEt/
-SccYBtj36lskH/UXhQpc6JHBGhT9tXyLssV1am8CgYEAuQxJUgpTHvjeoRjUciwh
-6FZW5HbcKdrQrhjwub9m3ELeWFV6QCA8RxqEByEkuqJuAdgHYgD7drbza13u/po4
-RX4tcN0ngHArR++ClDaMLo7X9VpwenVxYYtUwyXqEp3NsoQ9fj2IKdl5BPV2sCmp
-3fMNDFg55MuHHcbSk2kS5skCgYBCzE3aV/3PxvUzDgBgu8/4+oKGreb7GNZSI5R7
-Z20TWvZok5q2xppKFcvcZ1HdzkRfTktUN+KkPJkbSzYAH1+fw6flk8WCI8Hin/Dy
-QQgTh7o0ZE1ZXOydjn8vaODvFHGxkQSEj1hqZkPfsISLOCDA/GGnh6oUcCQAWPsb
-Ibm2pQKBgBZ+Tq5G5V/dQwuHj6RCkK31vRYby6wRX5+OgfX4a+Mcq6KKLLgv3bbY
-hutsdkpXLeP3KWsyIjCDQUtyH/abUYeOYcrVwv0c62CNUxl0XGw3maTJXaArZof+
-IaVaz9BPpzvv/QVv/tob5T8JZFuJB6hzFK9+Fx3dc9AXng+TlsgP
------END RSA PRIVATE KEY-----
-```
+  ![](images/100/LabGuide100-c5a01c33.png)
 
-  ![](images/100/12.png)
+- Next you will need to create a fingerprint for the user. Copy the following private key contents in entirety into the **Private Key** field on the OCI connection form.
+
+  ```
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEowIBAAKCAQEA4p45aXJuslQTMPhx09ITEp5YZdgOUGKYCTz9npnlrxBem1xK
+  gUxogkcBQp3NvI7IBv8l4CWxn2y3BxcR9Br00scjeiPZjwxIg2GgapA8xBfdf68C
+  mMFMqCN/RhcDuFgTkK2Zo1unVyaox1piQJkrlJ7ocZWkDojZ5vgisYDAHFPYGjx3
+  Nkl5dZrhtZuH4smaPp8r9kNE0U7cFJGoIUFymPLGnOVFzGYFz+myquf/basrbFpR
+  fRqz+GAQePp+ybthglpmZUJlAc+Jo6JEcGMJCavmOCiJ/vHudCWXfEUYt6lVI33H
+  Tnp4WlygeuoPB3dLdv+f/+5Hmjsl9o8tcmtRlwIDAQABAoIBAEVisK1qjh4nw+CA
+  kUmLzq8qsGIubuOJ7IcXl4fSExMw7eafsWg5Xt5UozwkWPPcu734rT4eDG6FuNyA
+  4cxd3IwU0PX6uAgmeKVRZO57zz8zF2yaxy7CMJhilft93HO68/KeVKZBz9DNU2wG
+  boLc4w0UQpNUf/C7Ugx3+RdkFm4VYlbXwhGVmPdPmVShph+EXmgBuTKBy9K1kuYA
+  KEBu3ffYBecgzHAObwv3rafvzkXoIRFj4hEtNYPyVK3c3rNH+yLCyKjVExA/Xdfs
+  s/D37yCzj7YZvRiqvxW+buItP8nK7yS0VOGJ1FjhG2Vf7jioDRzKBkcwsrJFlNea
+  fzJanaECgYEA9RV/bhW+ukGOc7UjHiDU1whKBCM0JbhHBsUn4Cxe+82KduV1NBWG
+  GUV9tXoJbMn/SZfX3TxrIZKspsedr4mqgFirDStsS22Gzmfi7GyVVVzfP2STt97o
+  1UFOfVOC/Y1jVoFzgtZ5dch2PL1D6Rf1ZxYsb+try4cFxnMh/GMYP1kCgYEA7LYs
+  jbcxBrzvAHWm5K2JhUfVttzyT1d5txrc2qbx8m9fQasNvKI/L5dS1dMuqgp+tO2u
+  ec0151miQh2Hni5zizdWQThvtNN0qx3PeLRs61EcxBjwtqOy9dPTV+ZQOsQSzEt/
+  SccYBtj36lskH/UXhQpc6JHBGhT9tXyLssV1am8CgYEAuQxJUgpTHvjeoRjUciwh
+  6FZW5HbcKdrQrhjwub9m3ELeWFV6QCA8RxqEByEkuqJuAdgHYgD7drbza13u/po4
+  RX4tcN0ngHArR++ClDaMLo7X9VpwenVxYYtUwyXqEp3NsoQ9fj2IKdl5BPV2sCmp
+  3fMNDFg55MuHHcbSk2kS5skCgYBCzE3aV/3PxvUzDgBgu8/4+oKGreb7GNZSI5R7
+  Z20TWvZok5q2xppKFcvcZ1HdzkRfTktUN+KkPJkbSzYAH1+fw6flk8WCI8Hin/Dy
+  QQgTh7o0ZE1ZXOydjn8vaODvFHGxkQSEj1hqZkPfsISLOCDA/GGnh6oUcCQAWPsb
+  Ibm2pQKBgBZ+Tq5G5V/dQwuHj6RCkK31vRYby6wRX5+OgfX4a+Mcq6KKLLgv3bbY
+  hutsdkpXLeP3KWsyIjCDQUtyH/abUYeOYcrVwv0c62CNUxl0XGw3maTJXaArZof+
+  IaVaz9BPpzvv/QVv/tob5T8JZFuJB6hzFK9+Fx3dc9AXng+TlsgP
+  -----END RSA PRIVATE KEY-----
+  ```
+
+  ![](images/100/LabGuide100-2d41b2e5.png)
+
+- Return to the user details page and then select **Add Public Key** from the API keys section.
+
+  ![](images/100/LabGuide100-cd397db8.png)  
 
 - To obtain the fingerprint you must paste the public key into the provided field. This time paste the key into the field and select **Add**. Paste the following public key
- 
+
     ```
 -----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4p45aXJuslQTMPhx09IT
@@ -99,7 +115,7 @@ mPLGnOVFzGYFz+myquf/basrbFpRfRqz+GAQePp+ybthglpmZUJlAc+Jo6JEcGMJ
 CavmOCiJ/vHudCWXfEUYt6lVI33HTnp4WlygeuoPB3dLdv+f/+5Hmjsl9o8tcmtR
 lwIDAQAB
 -----END PUBLIC KEY-----
-    ``` 
+    ```
 
   ![](images/100/13.png)
 

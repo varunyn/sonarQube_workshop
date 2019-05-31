@@ -56,21 +56,13 @@ This is the first of several labs that are part of the **Continuous Code Inspect
 
     ![](images/050/6.png)
 
-- Click on the **hamburger menu** in the upper left corner and **Select Compute** from the dropdown.
+- Click the **close button** at the top of the pop-up menu.
 
-![](images/050/LabGuide050-827bb0a9.png)
+  ![](images/050/LabGuide050-874df83f.png)
 
 ### **STEP 3**: Create the Developer Cloud Service Instance
 
-- From the OCI Dashboard **click the hamburger icon** in the top left to expand the services menu.
-
-  ![](images/100/1.png)
-
-- With the menu open scroll down until you see **My Services Dashboard**, once you find it, select it to navigate to your services.
-
-  ![](images/100/2.png)
-
-- You will see some options to get started with your cloud services. We'll bypass those for now, instead select the hamburger in the top left of the viewport to expand your list of services.
+- Open the Hamburger menu in the top left corner of the page.
 
   ![](images/100/3.png)
 
@@ -86,13 +78,17 @@ This is the first of several labs that are part of the **Continuous Code Inspect
 
     ![](images/050/lab050_Devcs_2.png)
 
-- Confirm the detials and click on **Create**
+- Confirm the details and click on **Create**
 
     ![](images/050/lab050_Devcs_3.png)
 
 ### **STEP 4**: Create Compartment
 
-- Click on the hamburger menu on the top left and then scroll to **identity** and then click **Compartments** .
+- Open the **Hamburger Menu** at the top of the page and **Select Compute** to navigate to the OCI Console.
+
+    ![](images/050/LabGuide050-827bb0a9.png)
+
+- Click on the hamburger menu on the top left and then scroll to **Identity** and then click **Compartments** .
 
     ![](images/050/lab100_Create_Compartment.png)
 
@@ -105,7 +101,7 @@ This is the first of several labs that are part of the **Continuous Code Inspect
     ![](images/050/lab100_Create_Compartment_2.png)
 
 
-### **STEP 5**: Create VCN and edit security rules
+### **STEP 5**: Create VCN and Edit Security Rules
 
 - Once the Compartment is ready, we will create VCN. Click on the hamburger menu on the top left, **Networking** and then click on **Virtual Cloud Networks**
 
@@ -115,14 +111,19 @@ This is the first of several labs that are part of the **Continuous Code Inspect
 
     ![](images/050/lab100_Create_VCN_2.png)
 
-- Fill out Name and make sure to click on the second option **CREATE VIRTUAL CLOUD NETWORKS PLUS RELATED RESOURCES**
+- Add a Name for your VCN and select the second option **CREATE VIRTUAL CLOUD NETWORKS PLUS RELATED RESOURCES**
+
     ![](images/050/lab100_Create_VCN_3.png)
 
 - Scroll down and click **Create Virtual Cloud Network**  
 
     ![](images/050/lab100_Create_VCN_3_1.png)
 
-- Once you see the VCN created click on it and then click on **Security List**
+- Once you see the VCN created click select the close button to proceed.
+
+    ![](images/050/LabGuide050-7d4bae3e.png)
+
+- Click on **Security List**
 
     ![](images/050/lab100_Create_VCN_4.png)
 
@@ -133,7 +134,7 @@ This is the first of several labs that are part of the **Continuous Code Inspect
 - Click on **Add Ingress Rules**.
     ![](images/050/9.png)
 
-- Enter Source CIDR 0.0.0.0/0 and destination port range **9000,8080**. We are opening port 9000 which is default port for running sonarQube which we will deploy in next lab and port 8080 which is default for our web service which we will deploy in lab 400.
+- Enter Source CIDR 0.0.0.0/0 and destination port range **9000,8080**. We are opening port 9000 which is default port for running SonarQube, which we will deploy in next lab, and port 8080 which is default for our web service which we will deploy in lab 400.
 
     ![](images/050/10.png)
 
@@ -142,7 +143,7 @@ This is the first of several labs that are part of the **Continuous Code Inspect
     ![](images/050/11.png)
 
 
-### **STEP 6**: Create Instance
+### **STEP 6**: Create SonarQube & Java Web Service Instances
 
 - Click on the hamburger menu on top right, then Compute and then click on **Instances**.
 
@@ -169,3 +170,5 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCTmnQPppvuP15M5jzTrRoMzWpERDIV9r0Eq1mj+5rE
     ![](images/050/lab100_Create_Instance_3_3.png)
 
 - Repeat the process and create one more instance named **JavaWebService**. Use the same public key as above.
+
+- You may proceed to Lab 100. 
