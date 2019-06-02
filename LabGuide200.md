@@ -25,15 +25,15 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
 
     ![](images/200/lab200_access_devcs_2.png) 
 
-- Click on **Create Job** 
+- Click on **Build** in the left panel and then click on **Create Job** 
 
     ![](images/200/lab200_createBuildJob_1.png) 
 
-- Give the name for Job. For sake of simplicty we name it deploySonarQube. Make sure to select template.
+- Give the name for Job. We name it deploySonarQube but you can give any name of your choice. Make sure to select template and then click **Create**.
 
     ![](images/200/lab200_createBuildJob_2.png)
 
-- Click on **Before Build** in Job Configuration and then click on **Add Before Build Action** and then select **SSH Configuration**.
+- In the Job configuration page, click on **Before Build** in Job Configuration, next click on **Add Before Build Action** and then select **SSH Configuration**.
 
     ![](images/200/lab200_createBuildJob_3.png)
 
@@ -116,7 +116,7 @@ EOF
 
     ![](images/200/lab200_createBuildJob_8.png)
 
-- Once the build start running click on **Build Log** to check the log and see what steps are being performed.
+- Once the job is running click on **Build Log** to check the log and see what steps are being performed.
 
     ![](images/200/lab200_runBuildJob_1.png)
 
@@ -126,11 +126,11 @@ EOF
 
 ### **STEP 3**: Configure Developer Cloud Service to use SonarQube
 
-- Click on **Project Administration** and then click on **Add SonarQube Server Connection**
+- Click on **Project Administration** from the left panel and then click on **Add SonarQube Server Connection**
 
     ![](images/200/lab200_configureSonar_1.png)
 
-- In the form fill out details. Username and Password is **admin**. Then click **Create**
+- In the form fill out details. Username and Password both are **admin**. Click **Create**
 
     ![](images/200/lab200_configureSonar_2.png)
 
@@ -138,7 +138,9 @@ EOF
 
     ![](images/200/lab200_configureSonar_3.png)
 
-- Go back to Build tab and click on the build created in Lab 100 and click on **Configure**
+- Go back to Build tab in the left panel and click on the **Job created in Lab 100** (i.e build_maven) and click on **Configure**
+
+    ![](images/200/job_configure.png)
 
     ![](images/200/lab200_configureSonar_4.png)
 
@@ -146,7 +148,7 @@ EOF
 
     ![](images/200/lab200_configureSonar_5.png)
 
-- Select the Sonar Server which we created for the dropdown list.
+- Select the Sonar Server which we created in previous step from the dropdown list.
 
     ![](images/200/lab200_configureSonar_6.png)
 
@@ -154,17 +156,17 @@ EOF
 
     ![](images/200/lab200_configureSonar_7.png)
 
-- Here add the sonarQube server URL using the following command and then save once done.
+- Here add the sonarQube server URL in **Goals** using the following command and then click **Save** once done.
 
 ```
 sonar:sonar -Dsonar.host.url=<SONARQUBE_SERVER_URL>
 ```
 
-- NOTE: Make sure to change the URL in the above command. It should Public IP address of the compute instance and the port which 9000.
+- NOTE: Make sure to change the URL in the above command. It should Public IP address of the compute instance and the port which is 9000 for accessing SonarQube server.
 
     ![](images/200/lab200_configureSonar_8.png)
 
-- Click on **Build Now** and once the job is running click on **Build Log**
+- Click on **Build Now** and once the job starts building click on **Build Log**
 
     ![](images/200/lab200_runBuild_1.png)
 
@@ -181,16 +183,22 @@ sonar:sonar -Dsonar.host.url=<SONARQUBE_SERVER_URL>
 
     ![](images/200/lab200_soarqube_dashboard.png)
 
+Note: SONARQUBE_SERVER_URL is public IP address of the instance used in previous step.
+
 - Login using username and password as admin.
 
     ![](images/200/1.png)
 
-- Click on the **Projects** and there you click on jersey-example.
+- Click on the **Projects** in the Navbar and then click on project which in our case is **jersey_example**
 
     ![](images/200/2.png)
 
-- You will see the analysis report in the overview, to check the Issues click on Issues.
+- You will see the analysis report in the overview, to check the issues, bugs click on **Issues**.
+
     ![](images/200/3.png)
 
-- On the left side there are all the bugs reported in the code.
+- The panel on the left side displays all the bugs reported in the code.
+
     ![](images/200/4.png)
+
+ **You are now ready to move to the next lab: [Lab 300](LabGuide300.md)**
