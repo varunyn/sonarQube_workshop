@@ -20,7 +20,8 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
 ### **STEP 1**: Create Build Job to create and push Docker image to registry
 
--  Create Build Job. Click on **Builds** in left menu and then click **Create Job**.
+- Continuing the previous lab, make sure to be in Developer Cloud Service Instacem.
+- Create Build Job. Click on **Builds** in left panel and then click **Create Job**.
 
     ![](images/400/1.png)
 
@@ -28,7 +29,7 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
     ![](images/400/2.png)
 
-- Click on git, add Git and then make sure to select correct git repository.
+- Click on **git** in the Job configuration, click on **add Git** and then make sure to select correct git repository.
 
     ![](images/400/3.png)
 
@@ -36,7 +37,7 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
     ![](images/400/4.png)
 
-- Enter username and password for the docker hub account.
+- Enter username and password of the docker hub account. **Note: If you don't have docker account, create one from [Docker Hub website](https://hub.docker.com)**
 
     ![](images/400/5.png)
 
@@ -52,18 +53,21 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
     ![](images/400/8.png)
 
-- Enter registry host and name of the image and then click Save on top of the page.
+- Enter registry host and name of the image and then click **Save** on top of the page.
 
     ![](images/400/9.png)
 
-- Run the job and see the build logs to see if it is successful. To confirm go to Docker hub and click on repositories in menu.
+- Click on **Build Now** to run the job and see the build logs to see if it is successful. 
 
     ![](images/400/9-1.png)
+
+- To confirm go to [Docker Hub website](https://hub.docker.com) and click on **repositories** in navigation bar.
+
     ![](images/400/10.png)
 
 ### **STEP 2**: Create Build Job to run Docker image in Compute Instance
 
-- Create Build Job. Click on **Builds** in left menu and then click **Create Job**.
+- Create another Build Job. Click on **Builds** in left panel and then click **Create Job**.
 
     ![](images/400/1.png)
 
@@ -71,11 +75,11 @@ For this lab you will need Github and Oracle Cloud account Hub Accounts. Use the
 
     ![](images/400/11.png)
 
-- Click on **Before Build**, **Add Before Build Action** and then select **SSH configuration**.
+- Click on **Before Build** in Job configuration, **Add Before Build Action** and then select **SSH configuration**.
 
     ![](images/400/12.png)
 
-- Paste the private key provided in git repo or paste the below key and select option Setup files in ~/.ssh for command line tools. 
+- Paste the private key provided in git repo or paste the below key and select option **Setup files in ~/.ssh for command line tools**. 
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
@@ -111,6 +115,7 @@ sawLIbtlGQwtd8mO8uHFHW8kMEDei/qL+WhgimdeJeF2k8Xv939N
     ![](images/400/13.png)
 
 - Click on **Steps**, **Add Step** and select **Unix Shell**. 
+
     ![](images/400/14.png)
 
 - Paste the below command to the shell
@@ -133,16 +138,16 @@ exit
 EOF
 ```
 
-NOTE: Replace the IP address with the IP address of your JavaWebService compute image created in lab 050, docker image name from your docker hub.
+**NOTE: Replace the IP address with the IP address of your JavaWebService compute image created in lab 050, docker image name from your docker hub.**
 
 - Paste the commands in Unix Shell and click **Save**.
 
     ![](images/400/15.png)
 
-- Build the job. Check the logs.
+- Click on **Build Now** to run the Job. Check the logs for message.
 
     ![](images/400/16.png)
 
-- To confirm everything is deployed successfully. Go to your IP_address:8080/statictweets
+- To confirm everything is deployed successfully. Go to your **IP_address:8080/statictweets**.
 
     ![](images/400/17.png)
