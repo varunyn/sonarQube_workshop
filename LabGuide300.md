@@ -21,7 +21,7 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
 
 ### **STEP 1**: Check for the issue in SonarQube
 
-- Continuing the previous lab, go to the issues page in sonarQube, for this workshop we will solve the issue type Bug.
+- Continuing the previous lab, go to the issues page in sonarQube, for this workshop we will solve the issue type **Bug**.
 
     ![](images/300/1.png)
 
@@ -34,6 +34,18 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
     ![](images/300/3.png)
 
 ### **STEP 2**: Create issue in Developer Cloud Service
+
+- Go back to Oracle Cloud, navigate back to your MyServices dashboard by selecting the **Hamburger Menu** and clicking **MyServices Dashboard**.
+
+    ![](images/050/4.png)
+
+- Expand the **Developer Hamburger Menu** and select **Open Service Console**.
+
+    ![](images/100/LabGuide100-502d58d4.png)
+
+- You should see the Developer Cloud Instance you provisioned in the previous lab. Ensure it is in the ready state then click the menu icon to the right of the name and with the options visible select **Access Service Instance**.
+
+    ![](images/100/5.png)
 
 - We will generate new issue based on the error messagee seen in the previous step. Click on **Issues** in the left panel and then click on **Create Issue**.
 
@@ -87,10 +99,11 @@ Reason of error: Using return, break, throw, and so on from a finally block supp
 
     ![](images/300/13.png)
     
-- In the form check the Status and select Resolved . Also check Resolution and select Fixed from dropdown, click **Next** when finished and then Save to close the issue.
+- In the form check the Status and select Resolved . Also check Resolution and select Fixed from dropdown, click **Next** when finished and then **Save** to close the issue.
+
     ![](images/300/14.png)
+
     ![](images/300/15.png)
 
-
-
+ **You are now ready to move to the next lab: [Lab 400](LabGuide400.md)**
 
