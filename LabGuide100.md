@@ -158,9 +158,17 @@ lwIDAQAB
 
     ![](images/100/21-1.png)
 
-- Search for Docker and  click on Plus sign for **Docker 1**. It should add the item to the right panel as **Selected Software**. Click **Done**
+- Search for Docker and  click on Plus sign for **Docker 1**. It should add the item to the right panel as **Selected Software**. Click **Done**. This will create the template for our workshop
 
     ![](images/100/21-2.png)
+
+- Next click on **Build Virtual Machines** and then click **create VM**.
+
+    ![](images/100/VM_1.png)
+
+- Select the quantity, template we created, region and shape.
+
+    ![](images/100/VM_2.png)
 
 ### **STEP 3**: Create Developer Cloud Project and Configure Git
 
@@ -225,3 +233,5 @@ lwIDAQAB
 - You will be taken to the home page for the job. Select **Build Now**, this will provision a VM spec'd to your template, using your OCI connection to build the app you have imported from github. While you see **Waiting for executor** the OCI instance is being provisioned, once you see a progress bar then Developer Cloud Service is running the steps you established in your job inside the OCI instance. When complete you should see a check mark next to the job.
 
     ![](images/100/41.png)
+
+ **You are now ready to move to the next lab: [Lab 200](LabGuide200.md)**
