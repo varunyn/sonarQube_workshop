@@ -15,9 +15,9 @@ This is the first of several labs that are part of the **Continous Code Inspecti
 
 For this lab you will need Oracle Cloud account and Developer Cloud service instance.
 
-## Deploying SonarQube application to Compute Instance
+## Deploying SonarQube Application to Compute Instance
 
-### **STEP 1**: Create build job to deploy SonarQube docker image in Compute Instance.
+### **STEP 1**: Create Build Job to Deploy SonarQube Docker Image in Compute Instance.
 
 - **Note:Continuing Lab100, make sure you are in Developer Cloud Service Instance. If not follow the below steps click one Hamburger menu on left top and select Developer, then on the following page click on hamburger menu on right of the instance and the click on Access Service Instance.**
 
@@ -114,7 +114,7 @@ EOF
 
     ![](images/200/lab200_createBuildJob_7.png)
 
-### **STEP 2**: Run the build job and check server deployment
+### **STEP 2**: Run the Build Job and Check Server Deployment
 
 - Click on **Build now**
 
@@ -128,7 +128,7 @@ EOF
 
     ![](images/200/lab200_runBuildJob_2.png)
 
-### **STEP 3**: Configure Developer Cloud Service to use SonarQube
+### **STEP 3**: Configure Developer Cloud Service to Use SonarQube
 
 - Click on **Project Administration** from the left panel and select **Build**.
 
@@ -191,17 +191,20 @@ EOF
 - Check the IP to see the dashboard.
 
 
-### **STEP 4**: Check the analysis
+### **STEP 4**: Check the Analysis
 
-- To check the anaylsis done by SonarQube, go to the SONARQUBE_SERVER_URL.  Add port :9000 at the end of url
+- To check the analysis done by SonarQube, go to the SONARQUBE_SERVER_URL and port :9000 at the end of url.
 
     ![](images/200/lab200_soarqube_dashboard.png)
 
 Note: SONARQUBE_SERVER_URL is public IP address of the instance used in previous step.
 
-- Login using username and password as admin.
-
-    ![](images/200/1.png)
+- Click the **Login  Button** and enter:
+  ```
+  Username: admin
+  Password: admin
+  ```
+  ![](images/200/1.png)
 
 - Click on the **Projects** in the Navbar and then click on project which in our case is **jersey_example**
 
