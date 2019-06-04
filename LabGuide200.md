@@ -21,15 +21,15 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
 
 - **Note:Continuing Lab100, make sure you are in Developer Cloud Service Instance. If not follow the below steps click one Hamburger menu on left top and select Developer, then on the following page click on hamburger menu on right of the instance and the click on Access Service Instance.**
 
-    ![](images/200/lab200_access_devcs_1.png) 
+    ![](images/200/lab200_access_devcs_1.png)
 
-    ![](images/200/lab200_access_devcs_2.png) 
+    ![](images/200/lab200_access_devcs_2.png)
 
-- Click on **Build** in the left panel and then click on **Create Job** 
+- Click on **Build** in the left panel and then click on **Create Job**
 
-    ![](images/200/lab200_createBuildJob_1.png) 
+    ![](images/200/lab200_createBuildJob_1.png)
 
-- Give the name for Job. We name it deploySonarQube but you can give any name of your choice. Make sure to select template and then click **Create**.
+- Give the name for Job. We name it ```deploySonarQube``` but you can give any name of your choice. Make sure to select template and then click **Create**.
 
     ![](images/200/lab200_createBuildJob_2.png)
 
@@ -39,35 +39,35 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
 
 - Paste the Private Key for the Public key used to create Compute Instance in Lab 050. Also select **Setup files in ~/.ssh for command-lins tools**
 
-```
------BEGIN RSA PRIVATE KEY-----
-MIIEowIBAAKCAQEAk5p0D6ab7j9eTOY8060aDM1qREQyFfa9BKtZo/uaxJBaVmkR
-3HIJBmUaY0wXKlp/N1BhtW5n3w3QsuBJFlsnTbuSZZdy9jBaxfUwT4OGY9jIdlec
-dw0KLM8qQx4hpe7Kdc/ixmKTwpnT3Ls/0qy2zKyttl+ox7RGSV+emH2eRRFSoojr
-KvwHuPM28RFFCmQEOWHVkiy4mjgJqTKntqkL8okYs9DwLEKfKj+qRo6scTAWWnGR
-pTwg7qw+hOV8Yf1fky/ENF+9zdRXsZSLjuMeSqACUHUEK0kREybjUQtYewTTQJ/b
-tCW8vVNKqNtFLYC0G6QUp29BaC7sFMZj1KXP6wIDAQABAoIBAAT6NmO4uJVmKaXq
-Na7lrXU1EBpROmcnNOSNaq5u858hRwqW7HVEmy1OB3/FtxpEhvm0ijb2DCanbpw5
-l/1bAY5LfvpSCxxmMQlv5TspMkT3sHrdJXeWRvuP2Nr+jx/rV4R1iC4scNMlINHW
-tqZCEMACKrF1tFlXqO8cfFqkEcw+ZjC/2ywkiq2GMA6l41p3iij0vtX5tZ86x9Eb
-LSv/d4xzJBRSnr93eJ21SEVP/wCWerWpAYbVUhA1LXz09G4U9d71oWs1Uuxdeeu4
-WxupUNsJcR6df1eVIHFKVSXsIAapQNdeML//FSO7ZN3MZNglCMElRvbkw5yJN0Jf
-Ee5FcTECgYEAwqn2k6SwLDWPeMI/PEr5Z++6OjL/uCHjBrvWVPQeLlBs6sWqpOSU
-3DbTKXZNQePpJR8yZVyCfVDpFDY9iO/gPV1uKPFV+Mt6SIuyfsC1rxgaipJosxSP
-qK13nvKRD4zUVDTVZ1A6cWf3qXxQxpfcINCcktRUku6V9mv9OtLM4rUCgYEAwhx5
-yyFRyTQOiQhebbdvonxJVvHDLGEeNxEns3a2AnqlRO2a7xBIgqP4qyQXNw1z9+8P
-FDVl5p/vc0Tf2v/4EjvWadFuiFi4UUSp45C8FfZAaSPpzV9qZ2wU69cITqGWuOSE
-tQF6Gw0DhiliG9Q1f8/GZNh21FGnWN0bI0qqbB8CgYAKCJyvC4QRI0mb3ddIkky8
-sLyWl15a7VQ4WqI3isWreXXDvCCJk0ag+ypzLqfYx5iS00LTuqr3Lp507j7JuiOC
-xjgRYC8gPcy1xI2UvvYeak2j6tv+rwagmSBbTwFvHcEr/fUp+BarFcLMN54qPlWY
-U2heoRci461TIEnTKF5rKQKBgAz8Gqmb8PykntRL2wU74BvedIl8YrH1TTAh1aYL
-quE/kw6pVlPnovIaRegs4eCs5bUQKNIRQF/NExeC4/aiaNXPauhpOhuk06+cCEFQ
-zUQq1OQzotA6McP5Vuzv1X5tEMgNgVMaZjCpDjNLUWTLLUj/fSYB1PEfBTLMl6Qk
-uoHBAoGBAMH8/LbPs5yNM0YUZAuNijmqK8JnRAXdHb14m4/1kJvItx6sxoBtiWgm
-ryq4/XTyF5j9XsEF3v5wSot9aFLPUpfndaCLvFKgptUhICHTuPmBFhKX9yZbf2Iz
-sawLIbtlGQwtd8mO8uHFHW8kMEDei/qL+WhgimdeJeF2k8Xv939N
------END RSA PRIVATE KEY-----
-```
+  ```
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEowIBAAKCAQEAk5p0D6ab7j9eTOY8060aDM1qREQyFfa9BKtZo/uaxJBaVmkR
+  3HIJBmUaY0wXKlp/N1BhtW5n3w3QsuBJFlsnTbuSZZdy9jBaxfUwT4OGY9jIdlec
+  dw0KLM8qQx4hpe7Kdc/ixmKTwpnT3Ls/0qy2zKyttl+ox7RGSV+emH2eRRFSoojr
+  KvwHuPM28RFFCmQEOWHVkiy4mjgJqTKntqkL8okYs9DwLEKfKj+qRo6scTAWWnGR
+  pTwg7qw+hOV8Yf1fky/ENF+9zdRXsZSLjuMeSqACUHUEK0kREybjUQtYewTTQJ/b
+  tCW8vVNKqNtFLYC0G6QUp29BaC7sFMZj1KXP6wIDAQABAoIBAAT6NmO4uJVmKaXq
+  Na7lrXU1EBpROmcnNOSNaq5u858hRwqW7HVEmy1OB3/FtxpEhvm0ijb2DCanbpw5
+  l/1bAY5LfvpSCxxmMQlv5TspMkT3sHrdJXeWRvuP2Nr+jx/rV4R1iC4scNMlINHW
+  tqZCEMACKrF1tFlXqO8cfFqkEcw+ZjC/2ywkiq2GMA6l41p3iij0vtX5tZ86x9Eb
+  LSv/d4xzJBRSnr93eJ21SEVP/wCWerWpAYbVUhA1LXz09G4U9d71oWs1Uuxdeeu4
+  WxupUNsJcR6df1eVIHFKVSXsIAapQNdeML//FSO7ZN3MZNglCMElRvbkw5yJN0Jf
+  Ee5FcTECgYEAwqn2k6SwLDWPeMI/PEr5Z++6OjL/uCHjBrvWVPQeLlBs6sWqpOSU
+  3DbTKXZNQePpJR8yZVyCfVDpFDY9iO/gPV1uKPFV+Mt6SIuyfsC1rxgaipJosxSP
+  qK13nvKRD4zUVDTVZ1A6cWf3qXxQxpfcINCcktRUku6V9mv9OtLM4rUCgYEAwhx5
+  yyFRyTQOiQhebbdvonxJVvHDLGEeNxEns3a2AnqlRO2a7xBIgqP4qyQXNw1z9+8P
+  FDVl5p/vc0Tf2v/4EjvWadFuiFi4UUSp45C8FfZAaSPpzV9qZ2wU69cITqGWuOSE
+  tQF6Gw0DhiliG9Q1f8/GZNh21FGnWN0bI0qqbB8CgYAKCJyvC4QRI0mb3ddIkky8
+  sLyWl15a7VQ4WqI3isWreXXDvCCJk0ag+ypzLqfYx5iS00LTuqr3Lp507j7JuiOC
+  xjgRYC8gPcy1xI2UvvYeak2j6tv+rwagmSBbTwFvHcEr/fUp+BarFcLMN54qPlWY
+  U2heoRci461TIEnTKF5rKQKBgAz8Gqmb8PykntRL2wU74BvedIl8YrH1TTAh1aYL
+  quE/kw6pVlPnovIaRegs4eCs5bUQKNIRQF/NExeC4/aiaNXPauhpOhuk06+cCEFQ
+  zUQq1OQzotA6McP5Vuzv1X5tEMgNgVMaZjCpDjNLUWTLLUj/fSYB1PEfBTLMl6Qk
+  uoHBAoGBAMH8/LbPs5yNM0YUZAuNijmqK8JnRAXdHb14m4/1kJvItx6sxoBtiWgm
+  ryq4/XTyF5j9XsEF3v5wSot9aFLPUpfndaCLvFKgptUhICHTuPmBFhKX9yZbf2Iz
+  sawLIbtlGQwtd8mO8uHFHW8kMEDei/qL+WhgimdeJeF2k8Xv939N
+  -----END RSA PRIVATE KEY-----
+  ```
 - Note: You can use your own keys but to keep the lab guide easy we are providing one for you.
 
     ![](images/200/lab200_createBuildJob_4.png)
@@ -76,10 +76,10 @@ sawLIbtlGQwtd8mO8uHFHW8kMEDei/qL+WhgimdeJeF2k8Xv939N
 
     ![](images/200/lab200_createBuildJob_5.png)
 
-- Paste the following commands in the Unix Shell
+- Paste the following commands in the Unix Shell.  
 
 ```bash
-ssh -o StrictHostKeyChecking=no opc@PUT_YOUR_PUBLIC_IP_ADDRESS_OF_THE_INSTANCE_CREATED_IN_LAB_050 << EOF
+ssh -o StrictHostKeyChecking=no opc@<SONARQUBE_SERVER_URL> << EOF
 sudo yum install -y yum-utils \
   device-mapper-persistent-data \
   lvm2
@@ -95,16 +95,20 @@ sudo docker run --detach -p 9000:9000 sonarqube
 exit
 EOF
 ```
-- NOTE: In the above commands what we are doing is: 
-    - SSH into the instance 
-    - Install docker in instance 
+- NOTE: In the above commands what we are doing is:
+    - SSH into the instance
+    - Install docker in instance
     - Start docker
-    - Pull sonarQube docker image 
+    - Pull sonarQube docker image
     - Open firewall  
-    - open port 9000 and run docker image 
+    - open port 9000 and run docker image
     - exit ssh
 
     ![](images/200/lab200_createBuildJob_6.png)
+
+- **Enter your public IP** on line 2, for the virtual machine called sonar_compute that you created earlier.
+
+  ![](images/200/LabGuide200-280aa8cd.png)
 
 - Click **Save**
 
@@ -126,15 +130,25 @@ EOF
 
 ### **STEP 3**: Configure Developer Cloud Service to use SonarQube
 
-- Click on **Project Administration** from the left panel and then click on **Add SonarQube Server Connection**
+- Click on **Project Administration** from the left panel and select **Build**.
+
+  ![](images/200/LabGuide200-78822efb.png)
+
+- Then click on **Add SonarQube Server Connection**
 
     ![](images/200/lab200_configureSonar_1.png)
 
-- In the form fill out details. Username and Password both are **admin**. Click **Create**
+- In the form fill out details and click **Create**.
 
-    ![](images/200/lab200_configureSonar_2.png)
+  ```
+  Server Name: SonarQubeServer
+  SonarQube Server URL: http://<SONARQUBE_SERVER_URL>:9000
+  Username: admin
+  Pasword: admin
+  ```
+  ![](images/200/lab200_configureSonar_2.png)
 
-- Once added let's test if the connection works. Click on **Test Connection** and then check the message for the status.
+- Once added let's test if the connection works. **Click on the connection** you just created so it is highlighted. Select **Test Connection** and then check the message for the status.
 
     ![](images/200/lab200_configureSonar_3.png)
 
@@ -158,9 +172,9 @@ EOF
 
 - Here add the sonarQube server URL in **Goals** using the following command and then click **Save** once done.
 
-```
-sonar:sonar -Dsonar.host.url=<SONARQUBE_SERVER_URL>
-```
+  ```
+  sonar:sonar -Dsonar.host.url=http://<SONARQUBE_SERVER_URL>:9000
+  ```
 
 - NOTE: Make sure to change the URL in the above command. It should Public IP address of the compute instance and the port which is 9000 for accessing SonarQube server.
 
