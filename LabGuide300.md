@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the first of several labs that are part of the **Continous Code Inspection with Sonar Qube.** This workshop will walk you through how to manage application lifecycle and do code review using sonarQube.
+This is the third of several labs that are part of the **Continous Code Inspection with SonarQube.** This workshop will walk you through how to manage application lifecycle and do code review using SonarQube.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
@@ -19,13 +19,13 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
 
 ## Fixing the issue in code
 
-### **STEP 1**: Check for the issue in SonarQube
+### **STEP 1**: Check for the Issue in SonarQube
 
 - Continuing the previous lab, go to the issues page in sonarQube, for this workshop we will solve the issue type **Bug**.
 
     ![](images/300/1.png)
 
-- As you can see there are two issues shown under bug category with severity Critical and Major. 
+- As you can see there are two issues shown under bug category with severity Critical and Major.
 
     ![](images/300/2.png)
 
@@ -52,12 +52,15 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
     ![](images/300/4.png)
 
 - Fill out the form as shown in the below image.
+    ```
+    Summary: Solve bug in TwitterService.java
+    Description: Error on line 86
+    Owner: Set to Your Name
+    ```
 
-    ![](images/300/5.png)
+    ![](images/300/LabGuide300-adf2be32.png)
 
-- Repeat the process and create another issue.
-
-### **STEP 3**: Edit code in DevCS git repo
+### **STEP 3**: Edit Code in DevCS Git Repo
 
 - Click on **Git** in left panel to see the code repository.
 
@@ -74,9 +77,9 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
 
     ![](images/300/9.png)
 
-- Go to line 86 and remove **return**. 
+- Go to line 86 and remove **return**.
 Reason of error: Using return, break, throw, and so on from a finally block suppresses the propagation of any unhandled Throwable which was thrown in the try or catch block.
-    
+
     ![](images/300/10.png)
 
 ### **STEP 4**: Check the SonarQube for issue fix
@@ -88,7 +91,7 @@ Reason of error: Using return, break, throw, and so on from a finally block supp
 - To confirm open issues page and click on bug.
 
     ![](images/300/12.png)
-   
+
 ### **STEP 5**: Close the issue in Developer Cloud Service
 
 - Go back to Developer cloud service and click on **Issues** in left panel.
@@ -98,7 +101,7 @@ Reason of error: Using return, break, throw, and so on from a finally block supp
 - Select the issue and then click on **Update Selected**
 
     ![](images/300/13.png)
-    
+
 - In the form check the Status and select Resolved . Also check Resolution and select Fixed from dropdown, click **Next** when finished and then **Save** to close the issue.
 
     ![](images/300/14.png)
@@ -106,4 +109,3 @@ Reason of error: Using return, break, throw, and so on from a finally block supp
     ![](images/300/15.png)
 
  **You are now ready to move to the next lab: [Lab 400](LabGuide400.md)**
-
