@@ -82,7 +82,7 @@ Reason of error: Using return, break, throw, and so on from a finally block supp
 
     ![](images/300/10.png)
 
-### **STEP 4**: Check the SonarQube for issue fix
+### **STEP 4**: Check the SonarQube for Issue Fix
 
 - With the job already configured to run automatically on commit, go to SonarQube server dashboard. And you can see there are zero bugs shown.
 
@@ -92,7 +92,7 @@ Reason of error: Using return, break, throw, and so on from a finally block supp
 
     ![](images/300/12.png)
 
-### **STEP 5**: Close the issue in Developer Cloud Service
+### **STEP 5**: Close the Issue in Developer Cloud Service
 
 - Go back to Developer cloud service and click on **Issues** in left panel.
 
@@ -102,10 +102,14 @@ Reason of error: Using return, break, throw, and so on from a finally block supp
 
     ![](images/300/13.png)
 
-- In the form check the Status and select Resolved . Also check Resolution and select Fixed from dropdown, click **Next** when finished and then **Save** to close the issue.
+- In the form check the **Status** and select **Resolved**. Also check **Resolution** and select **Fixed** from dropdown. Click **Next** when finished.
 
     ![](images/300/14.png)
 
     ![](images/300/15.png)
+
+- Click **Save** to close the issue.
+
+    ![](images/300/LabGuide300-3814f43a.png)
 
  **You are now ready to move to the next lab: [Lab 400](LabGuide400.md)**
