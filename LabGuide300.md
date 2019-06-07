@@ -60,6 +60,15 @@ For this lab you will need Oracle Cloud account and Developer Cloud service inst
 
     ![](images/300/LabGuide300-adf2be32.png)
 
+- We will generate another issue. Fill out the form as shown in the below image.
+    ```
+    Summary: Solve bug in SampleStreamExample.java
+    Description: Error on line 114
+    Owner: Set to Your Name
+    ```
+
+    ![](images/300/Lab300_bug.png)
+
 ### **STEP 3**: Edit Code in DevCS Git Repo
 
 - Click on **Git** in left panel to see the code repository.

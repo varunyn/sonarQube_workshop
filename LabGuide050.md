@@ -143,7 +143,7 @@ This is the first of several labs that are part of the **Continuous Code Inspect
     ![](images/050/11.png)
 
 
-### **STEP 6**: Create SonarQube & Java Web Service Instances
+### **STEP 6**: Create SonarQube Instances
 
 - Click on the hamburger menu on top right, then Compute and then click on **Instances**.
 
@@ -169,6 +169,30 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCTmnQPppvuP15M5jzTrRoMzWpERDIV9r0Eq1mj+5rE
 
     ![](images/050/lab100_Create_Instance_3_3.png)
 
-- Repeat the process and create one more instance named **JavaWebService**. Use the same public key as above.
+### **STEP 7**: Create Java Web Service
 
-- You may proceed to Lab 100. 
+- Click on the hamburger menu on top right, then Compute and then click on **Instances**.
+
+    ![](images/050/lab100_Create_Instance_1.png)
+
+- Once you see the instances page, make sure to select right compartment and then click on **Create Instance**
+
+    ![](images/050/lab100_Create_Instance_2.png)
+
+- Give name of the instance, select availability domain.
+
+    ![](images/050/labGuide050_createinstance.png)
+
+- Paste the following public key.
+
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCTmnQPppvuP15M5jzTrRoMzWpERDIV9r0Eq1mj+5rEkFpWaRHccgkGZRpjTBcqWn83UGG1bmffDdCy4EkWWydNu5Jll3L2MFrF9TBPg4Zj2Mh2V5x3DQoszypDHiGl7sp1z+LGYpPCmdPcuz/SrLbMrK22X6jHtEZJX56YfZ5FEVKiiOsq/Ae48zbxEUUKZAQ5YdWSLLiaOAmpMqe2qQvyiRiz0PAsQp8qP6pGjqxxMBZacZGlPCDurD6E5Xxh/V+TL8Q0X73N1FexlIuO4x5KoAJQdQQrSRETJuNRC1h7BNNAn9u0Jby9U0qo20UtgLQbpBSnb0FoLuwUxmPUpc/r varuny@Varuns-MacBook-Pro-2.local
+```
+
+   ![](images/050/lab100_Create_Instance_3_2.png)
+
+- Click **Create**
+
+    ![](images/050/lab100_Create_Instance_3_3.png)
+
+- **You are now ready to move to the next lab: [Lab 100](LabGuide100.md)**
